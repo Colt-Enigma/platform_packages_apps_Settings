@@ -183,4 +183,10 @@
     <string name="fingerprint_enroll_touch_dialog_message_front">Touch the sensor on the front of your phone.</string>
     <string name="fingerprint_enroll_touch_dialog_message_rear">Touch the sensor on the back of your phone.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Touch the sensor on the side of your phone.</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Since the last update</string>
+    <string name="changelog_error">Unable to load changelog</string>
+
 </resources>

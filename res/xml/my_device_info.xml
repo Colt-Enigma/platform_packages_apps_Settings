@@ -21,6 +21,14 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <!-- Changelog -->
+    <Preference
+        android:key="changelog"
+        android:order="7"
+        android:title="@string/changelog_title"
+        android:summary="@string/changelog_summary"
+        android:fragment="com.android.settings.colt.Changelog" />
+
     <PreferenceCategory
         android:key="basic_info_category"
         android:selectable="false"
