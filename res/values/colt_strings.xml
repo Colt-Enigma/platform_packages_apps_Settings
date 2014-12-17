@@ -172,4 +172,7 @@
 
      <!-- Running services -->
     <string name="background_processes_settings_title">Background processes</string>
+
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Volume key sounds</string>
 </resources>
