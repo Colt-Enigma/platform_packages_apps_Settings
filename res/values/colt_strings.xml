@@ -169,4 +169,7 @@
     <string name="notification_battery_charge_level_seek_bar">Battery Level</string>
     <string name="notification_battery_charge_level_ringtone">Ringtone</string>
     <string name="notification_battery_charge_level_silent">Silent</string>
+
+     <!-- Running services -->
+    <string name="background_processes_settings_title">Background processes</string>
 </resources>
