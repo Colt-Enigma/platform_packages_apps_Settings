@@ -90,4 +90,6 @@
     <string name="monet_engine_chroma_factor_title">Chroma factor</string>
     <string name="monet_engine_linear_lightness_title">Use linear lightness</string>
 
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Background processes</string>
 </resources>
