@@ -104,6 +104,11 @@
             android:entries="@array/dark_ui_mode_entries"
             android:entryValues="@array/dark_ui_mode_values" />-->
 
+        <SwitchPreference
+            android:key="force_authorize_substratum_packages"
+            android:title="@string/force_authorize_substratum_packages_title"
+            android:summary="@string/force_authorize_substratum_packages_summary" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
