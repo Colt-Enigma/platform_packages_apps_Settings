@@ -107,7 +107,17 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
-    <!-- Build -->
+    <!-- Clang -->
+    <Preference
+        android:key="clang_version"
+        android:title="@string/clang_version"
+        android:summary="@string/summary_placeholder"
+        settings:layout="@layout/arc_card_about"
+        android:selectable="false"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.ClangVersionPreferenceController"/>
+
+    <!-- Build number -->
     <Preference
         android:key="os_build_number"
 	android:icon="@drawable/ic_android_version"
