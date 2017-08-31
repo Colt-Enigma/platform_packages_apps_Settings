@@ -48,12 +48,20 @@
         android:fragment="com.android.settings.applications.AppAndNotificationDashboardFragment"/>
 
     <Preference
+        android:key="top_level_colt_settings"
+	android:title="@string/colt_settings_dash_title"
+        android:summary="@string/colt_settings_summary"
+        android:icon="@drawable/ic_homepage_colt"
+        android:order="-90"
+        android:fragment="com.colt.enigma.ColtEnigma"/>
+
+    <Preference
         android:key="top_level_battery"
         android:title="@string/power_usage_summary_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_battery"
         android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
-        android:order="-90"
+        android:order="-80"
         settings:controller="com.android.settings.fuelgauge.TopLevelBatteryPreferenceController"/>
 
     <Preference
@@ -61,7 +69,7 @@
         android:title="@string/display_settings"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_display"
-        android:order="-80"
+        android:order="-70"
         android:fragment="com.android.settings.DisplaySettings"
         settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"/>
 
@@ -70,7 +78,7 @@
         android:title="@string/sound_settings"
         android:summary="@string/sound_dashboard_summary"
         android:icon="@drawable/ic_homepage_sound"
-        android:order="-70"
+        android:order="-60"
         android:fragment="com.android.settings.notification.SoundSettings"/>
 
     <Preference
@@ -78,7 +86,7 @@
         android:title="@string/storage_settings"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_storage"
-        android:order="-60"
+        android:order="-50"
         android:fragment="com.android.settings.deviceinfo.StorageSettings"
         settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
 
@@ -87,7 +95,7 @@
         android:title="@string/privacy_dashboard_title"
         android:summary="@string/privacy_dashboard_summary"
         android:icon="@drawable/ic_homepage_privacy"
-        android:order="-55"
+        android:order="-45"
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"/>
 
     <Preference
@@ -95,7 +103,7 @@
         android:title="@string/location_settings_title"
         android:summary="@string/location_settings_loading_app_permission_stats"
         android:icon="@drawable/ic_homepage_location"
-        android:order="-50"
+        android:order="-40"
         android:fragment="com.android.settings.location.LocationSettings"
         settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
 
@@ -104,7 +112,7 @@
         android:title="@string/security_settings_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_security"
-        android:order="-40"
+        android:order="-30"
         android:fragment="com.android.settings.security.SecuritySettings"
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
 
@@ -113,7 +121,7 @@
         android:title="@string/account_dashboard_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_accounts"
-        android:order="-30"
+        android:order="-20"
         android:fragment="com.android.settings.accounts.AccountDashboardFragment"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
@@ -122,7 +130,7 @@
         android:title="@string/accessibility_settings"
         android:summary="@string/accessibility_settings_summary"
         android:icon="@drawable/ic_homepage_accessibility"
-        android:order="-20"
+        android:order="-10"
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
 

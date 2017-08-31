@@ -224,4 +224,7 @@
     </plurals>
     <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
 
+    <!-- Colt Enigma -->
+    <string name="colt_settings_dash_title">ColtEnigma</string>
+    <string name="colt_settings_summary">Our favourite customization hub!!</string>
 </resources>

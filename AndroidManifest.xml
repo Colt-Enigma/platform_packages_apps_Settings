@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
         package="com.android.settings"
         coreApp="true"
         android:sharedUserId="android.uid.system">
@@ -3480,6 +3481,19 @@
                 <action android:name="com.android.settings.intent.action.FACE_ENROLL"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
+        </activity>
+
+        <!-- ColtEnigma -->
+        <activity android:name=".Settings$ColtEnigmaActivity"
+            android:label="@string/colt_settings_dash_title"
+	    android:icon="@drawable/ic_homepage_colt"
+	    android:parentActivityName="com.android.settings">
+            <intent-filter android:priority="69">
+                <action android:name="android.intent.action.MAIN" />
+            <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.colt.enigma.ColtEnigma" />
         </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
