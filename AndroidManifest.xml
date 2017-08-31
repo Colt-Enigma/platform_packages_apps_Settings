@@ -4487,6 +4487,20 @@
                 <action android:name="android.settings.BLUETOOTH_LE_AUDIO_QR_CODE_SCANNER"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
+
+	</activity>
+
+        <!-- ColtEnigma -->
+        <activity android:name=".Settings$ColtEnigmaActivity"
+            android:label="@string/colt_settings_dash_title"
+	    android:icon="@drawable/ic_homepage_colt"
+	    android:exported="true">
+	<intent-filter android:priority="1">
+                  <action android:name="android.intent.action.COLT_ENIGMA" />
+                  <category android:name="com.android.settings.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.colt.enigma.ColtEnigma" />
         </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
