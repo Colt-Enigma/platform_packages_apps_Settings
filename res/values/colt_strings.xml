@@ -32,4 +32,8 @@
     <string name="build_date">Build date</string>
     <string name="colt_version">ColtOS version</string>
     <string name="about_device_name">Device</string>
+
+    <!-- Colt Enigma -->
+    <string name="colt_settings_dash_title">ColtEnigma</string>
+    <string name="colt_settings_summary">Our favourite customization hub!!</string>
 </resources>
