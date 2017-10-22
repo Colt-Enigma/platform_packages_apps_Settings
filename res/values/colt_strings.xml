@@ -322,4 +322,8 @@
 
     <!-- Clang version -->
     <string name="clang_version">Clang version</string>
+
+    <!-- Charging vibration -->
+    <string name="charging_sounds_custom_title">Charging sound</string>
+    <string name="charging_vibro_title">Charging vibration</string>
 </resources>
