@@ -189,7 +189,10 @@
     <!-- Density category -->
     <string name="density_category">Density options</string>
 
-     <!-- Lockscreen timeout -->
+    <!-- Lockscreen timeout -->
     <string name="lockscreen_timeout_title">Lockscreen timeout</string>
 
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 </resources>
