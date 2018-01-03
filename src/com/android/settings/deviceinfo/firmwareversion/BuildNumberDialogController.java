@@ -22,6 +22,8 @@ import android.text.BidiFormatter;
 
 import com.android.settings.R;
 
+import android.os.SystemProperties;
+
 public class BuildNumberDialogController {
 
     @VisibleForTesting
@@ -33,11 +35,23 @@ public class BuildNumberDialogController {
         mDialog = dialog;
     }
 
+    private String getColtVersion(){
+        String buildType = SystemProperties.get("ro.colt.extra.version","");
+        return buildType.equals("") ? "" : "ColtOS" + "-" + buildType;
+    }
+
     /**
      * Updates the build number to the dialog.
      */
     public void initialize() {
-        mDialog.setText(BUILD_NUMBER_VALUE_ID,
-                BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
+        
+        StringBuilder sb = new StringBuilder();
+        sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
+        String coltVersion = getColtVersion();
+        if (!coltVersion.equals("")){
+            sb.append("\n");
+            sb.append(coltVersion);
+        }
+        mDialog.setText(BUILD_NUMBER_VALUE_ID, sb.toString());
     }
 }
