@@ -89,4 +89,8 @@
     <string name="full_gesture_mode_dt2s_title">Enable double tap to sleep</string>
     <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
 
+   <!-- Font picker -->
+     <string name="font_picker_title">Font</string>
+     <string name="disable_fonts_installed_title">Font picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the font picker.</string>
+
 </resources>
