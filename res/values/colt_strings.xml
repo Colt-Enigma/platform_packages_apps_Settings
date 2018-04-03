@@ -23,6 +23,9 @@
     <string name="colt_version_default">Unknown</string>
     <string name="keywords_colt_version">colt version</string>
 
+    <!-- ColtOS maintainer --> 
+    <string name="maintainer">Maintainer</string>
+
     <!-- About phone screen, build date -->
     <string name="about_device_name">Device Codename</string>
     <string name="build_date">Build date</string>
