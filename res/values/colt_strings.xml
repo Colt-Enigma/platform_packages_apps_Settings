@@ -69,4 +69,7 @@
     <!-- Colt Enigma -->
     <string name="colt_settings_dash_title">ColtEnigma</string>
     <string name="colt_settings_summary">Our favourite customization hub!!</string>
+
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Saved Earbuds</string>
 </resources>
