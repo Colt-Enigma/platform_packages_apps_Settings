@@ -72,4 +72,10 @@
         android:summary="@string/notification_sound_battery_charge_summary"
         android:fragment="com.android.settings.fuelgauge.BatteryChargeSoundSettings" />
 
+    <Preference
+       android:key="smart_pixels"
+       android:title="@string/smart_pixels_title"
+       android:summary="@string/smart_pixels_summary"
+       android:fragment="com.colt.settings.fragments.SmartPixels" />
+
 </PreferenceScreen>

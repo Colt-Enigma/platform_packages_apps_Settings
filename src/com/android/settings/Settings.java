@@ -165,6 +165,7 @@ public class Settings extends SettingsActivity {
     public static class StorageDashboardActivity extends SettingsActivity {}
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
+
     // ColtSettings
     public static class ColtSettingsLayoutActivity extends SettingsActivity {}
     public static class NavigationSettingsActivity extends SettingsActivity {}
@@ -176,4 +177,6 @@ public class Settings extends SettingsActivity {
     // LiveDisplay
     public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
 
+    // Smart Pixel
+    public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
 }
