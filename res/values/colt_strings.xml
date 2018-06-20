@@ -49,4 +49,10 @@
     <string name="build_date">Build date</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">build date, build info</string>
+
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Platform</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Total RAM</string>
 </resources>
