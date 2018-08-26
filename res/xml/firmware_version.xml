@@ -27,14 +27,23 @@
         android:layout="@layout/colt_logo"
         android:selectable="false"/>
 
-    <!-- Android version -->
+    <!-- Android version
     <Preference
         android:key="os_firmware_version"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:searchable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>-->
+
+    <!-- Colt version -->
+    <Preference
+        android:key="colt_version"
+        android:title="@string/colt_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:searchable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.ColtVersionDetailPreferenceController"/>
 
     <!-- Security patch -->
     <Preference
