@@ -179,4 +179,7 @@ public class Settings extends SettingsActivity {
 
     // ColtSettings
     public static class ColtSettingsActivity extends SettingsActivity {}
+
+    // OmniJaws
+    public static class OmniJawsSettingsActivity extends SettingsActivity { /* empty */ }
 }
