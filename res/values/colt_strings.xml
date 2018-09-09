@@ -181,4 +181,7 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
 
+    <!-- AOSP Gestures -->
+    <string name="aosp_gesture_preference">System Gestures</string>
+    <string name="aosp_gesture_summary">Stock gestures included with AOSP</string>
 </resources>
