@@ -146,4 +146,9 @@
     <!-- doze on charge -->
     <string name="doze_on_charge_title">Show when charging</string>
     <string name="doze_on_charge_summary">Wake screen when charging</string>
+
+    <!-- Battery ui -->
+    <string name="battery_stats_charging">Charging</string>
+    <string name="battery_stats_discharging">Discharging</string>
+
 </resources>
