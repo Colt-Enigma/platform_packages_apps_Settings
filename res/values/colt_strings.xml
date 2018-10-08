@@ -167,4 +167,9 @@
 
     <string name="hide_notch_title">Hide notch</string>
     <string name="hide_notch_summary">Apps can not use the notch area</string>
+
+    <!-- Toolbar -->
+    <string name="settings_head_title">Colt Enigma</string>
 </resources>
+
+
