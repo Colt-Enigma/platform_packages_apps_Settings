@@ -16,6 +16,10 @@
     <string name="colt_name_title">ColtOS A Learners Hub</string>
     <string name="colt_name_summary">Colt Enigma - Continues - 3.0</string>
 
+    <!-- Colt Center -->
+    <string name="colt_settings_title">Colt Enigma</string>
+    <string name="colt_settings_summary">Open Colts Lobby :)</string>
+
     <!-- Changelog -->
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">Since the last update</string>
