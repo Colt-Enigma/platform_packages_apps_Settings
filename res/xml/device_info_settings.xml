@@ -21,6 +21,17 @@
     android:key="device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <!--Colt header -->
+     <PreferenceScreen
+             android:key="colt_header"
+             android:enabled="false"
+             android:layout="@layout/colt_header_about" />
+
+     <PreferenceScreen
+            android:key="about_colt"
+            android:fragment="com.colt.settings.fragments.About"
+            android:title="@string/colt_name_title" />
+
     <!-- Phone number -->
     <Preference
         android:key="phone_number"
