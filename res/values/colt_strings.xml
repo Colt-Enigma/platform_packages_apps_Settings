@@ -12,7 +12,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Nitrogen Settings -->
+    <!-- Colt Center -->
     <string name="colt_settings_title">ColtEnigma</string>
     <string name="colt_settings_summary">Open Colts Lobby :)</string>
 
@@ -24,4 +24,10 @@
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Reset stats</string>
     <string name="battery_stats_message">Battery history stats are going to be reset</string>
+
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
 </resources>
