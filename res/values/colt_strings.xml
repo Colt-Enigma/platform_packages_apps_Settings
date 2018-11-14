@@ -128,4 +128,14 @@
     <string name="security_settings_fingerprint_sensor_location_left">left side</string>
     <string name="security_settings_fingerprint_sensor_location_right">right side</string>
 
+    <!-- Battery info -->
+    <string name="battery_info_title">Battery Info</string>
+    <string name="battery_info_summary">Advanced battery information</string>
+    <string name="charge_full_design">Capacity</string>
+    <string name="charge_cycle">Charge cycles</string>
+    <string name="battery_temp">Temperature</string>
+    <string name="battery_tech">Technology</string>
+    <string name="battery_status">Status</string>
+    <string name="battery_voltage">Voltage</string>
+    <string name="battery_health">Health</string>
 </resources>
