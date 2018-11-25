@@ -46,6 +46,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     guava \
     jsr305 \
     settings-logtags \
+    glide
 
 LOCAL_STATIC_JAVA_LIBRARIES += \
     android-support-v7-cardview \

@@ -63,7 +63,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
         implements DeviceNamePreferenceController.DeviceNamePreferenceHost {
     private static final String LOG_TAG = "MyDeviceInfoFragment";
 
-    private static final String KEY_MY_DEVICE_INFO_HEADER = "my_device_info_header";
+   // private static final String KEY_MY_DEVICE_INFO_HEADER = "my_device_info_header";
     private static final String KEY_LEGAL_CONTAINER = "legal_container";
 
     @Override
@@ -79,7 +79,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
     @Override
     public void onResume() {
         super.onResume();
-        initHeader();
+       // initHeader();
     }
 
     @Override
@@ -142,7 +142,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    private void initHeader() {
+  /*  private void initHeader() {
         // TODO: Migrate into its own controller.
         final LayoutPreference headerPreference =
                 (LayoutPreference) getPreferenceScreen().findPreference(KEY_MY_DEVICE_INFO_HEADER);
@@ -166,8 +166,8 @@ public class MyDeviceInfoFragment extends DashboardFragment
                     com.android.settingslib.Utils.getUserIcon(getActivity(), userManager, info));
         }
 
-        controller.done(context, true /* rebindActions */);
-    }
+        controller.done(context, true /* rebindActions *//*);
+    }*/
 
     @Override
     public void showDeviceNameWarningDialog(String deviceName) {
