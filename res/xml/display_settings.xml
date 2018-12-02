@@ -141,15 +141,15 @@
         android:entryValues="@array/systemui_theme_values"
         settings:controller="com.android.settings.display.SystemUiThemePreferenceController" />
 
-    <com.android.settings.display.FontDialogPreference
-             android:key="custom_font"
-             android:title="@string/font_picker_title"
-             android:persistent="false" />
-
     <Preference
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
+
+    <com.android.settings.display.FontDialogPreference
+              android:key="custom_font"
+              android:title="@string/font_picker_title"
+              android:persistent="false" />
 
     <com.colt.settings.preferences.SystemSettingSwitchPreference
         android:key="enable_conditions"
