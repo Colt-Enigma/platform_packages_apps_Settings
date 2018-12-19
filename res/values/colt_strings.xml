@@ -115,4 +115,7 @@
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
 
+    <!-- OTA -->
+    <string name="coltupdate_settings_title">ColtOS updates</string>
+    <string name="coltupdate_settings_summary">Find OTA Updates for ColtOS</string>
 </resources>
