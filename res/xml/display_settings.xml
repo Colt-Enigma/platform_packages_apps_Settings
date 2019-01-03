@@ -158,6 +158,12 @@
         settings:controller="com.android.settings.display.SystemUiThemePreferenceController" />
 
     <Preference
+        android:key="cutout_settings"
+        android:title="@string/cutout_main"
+        android:summary="@string/cutout_main_summary"
+        android:fragment="com.android.settings.custom.CutoutFragment" />
+
+    <Preference
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
