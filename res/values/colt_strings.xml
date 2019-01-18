@@ -165,4 +165,6 @@
     <!-- Volume settings - Volume adjustment sound -->
     <string name="volume_adjust_sounds_title">Volume key sounds</string>
 
+    <string name="hide_notch_title">Hide notch</string>
+    <string name="hide_notch_summary">Apps can not use the notch area</string>
 </resources>
