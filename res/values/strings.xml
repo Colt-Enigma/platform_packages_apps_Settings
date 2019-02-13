@@ -10091,10 +10091,4 @@
 
     <!-- Title for Connected device shortcut [CHAR LIMIT=30] -->
     <string name="devices_title">Devices</string>
-
-    <string name="lockscreen_weather_show_image_title">show image title</string>
-    <string name="lockscreen_weather_show_city_summary">show advanced summary</string> 
-    <string name="lockscreen_weather_show_city_title">show city title</string> 
-    <string name="lockscreen_weather_show_temp_summary">show temp summary</string> 
-    <string name="lockscreen_weather_show_temp_title">show temp title</string> 
 </resources>
