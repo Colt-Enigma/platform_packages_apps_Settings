@@ -111,7 +111,7 @@
     <color name="suggestion_condition_background">@*android:color/suggestion_condition_background</color>
     <color name="condition_card_background">@*android:color/condition_card_background</color>
 
-    !-- Dashboard/homepage icon background colors -->
+    <!-- Dashboard/homepage icon background colors -->
     <color name="homepage_network_background">#2196F3</color>
     <color name="homepage_connected_device_background">#72B70F</color>
     <color name="homepage_app_and_notification_background">#FF7E0F</color>
