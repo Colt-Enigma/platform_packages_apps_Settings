@@ -247,6 +247,10 @@
     <string name="switch_brand_toolbar">Brandify settings title</string>
     <string name="switch_brand_toolbar_summary_on">Enable Colt-Enigma brand and user name in Settings dashboard</string>
     <string name="switch_brand_toolbar_summary_off">Disable Colt-Enigma brand and user name in Settings dashboard</string>
+
+    <!-- About phone, uptime. Deep sleep ratio since last reboot. -->
+    <string name="status_deep_sleep">(Deep sleep: %1$d%2$s)</string>
+
 </resources>
 
 
