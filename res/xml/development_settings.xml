@@ -31,6 +31,10 @@
             android:fragment="com.android.settings.applications.ProcessStatsSummary" />
 
         <Preference
+            android:key="system_server_heap_dump"
+            android:title="@string/capture_system_heap_dump_title" />
+
+        <Preference
             android:key="local_backup_password"
             android:title="@string/local_backup_password_title"
             android:summary="@string/local_backup_password_summary_none"
@@ -134,6 +138,11 @@
             android:key="enable_terminal"
             android:title="@string/enable_terminal_title"
             android:summary="@string/enable_terminal_summary" />
+
+        <SwitchPreference
+            android:key="automatic_system_server_heap_dumps"
+            android:title="@string/automatic_system_heap_dump_title"
+            android:summary="@string/automatic_system_heap_dump_summary" />
 
         <Preference android:key="mock_location_app"
                     android:title="@string/mock_location_app" />
