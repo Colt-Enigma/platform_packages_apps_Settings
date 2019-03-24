@@ -23,6 +23,7 @@ LOCAL_SRC_FILES += $(call all-java-files-under, ../ColtCenter/src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../SmartNavSettings/src)
 
 LOCAL_FULL_LIBS_MANIFEST_FILES += $(LOCAL_PATH)/AndroidManifest-SmartNav.xml
+LOCAL_SRC_FILES += $(call all-java-files-under, ../../../external/google/settings/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-slices-builders \
@@ -64,7 +65,8 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v7/recyclerview/res \
     frameworks/support/v7/cardview/res \
     packages/apps/ColtCenter/res \
-    packages/apps/SmartNavSettings/res
+    packages/apps/SmartNavSettings/res \
+    external/google/settings/res
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
