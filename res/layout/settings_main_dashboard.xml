@@ -34,9 +34,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 	    android:layout_margin="7dp"
-            app:cardBackgroundColor="?android:attr/colorBackground"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="9dp">
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp">
 
         <ImageView
             android:src="@drawable/cardview_search_background"
@@ -47,14 +46,18 @@
             <Toolbar
                 android:id="@+id/search_action_bar"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/search_bar_height"
-                android:background="?android:attr/selectableItemBackground"
+		android:layout_height="50dp"
+		android:background="@drawable/rounded_outline_bg"
+		android:clickable="true"
+                android:clipChildren="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:contentInsetStartWithNavigation="64dp"
                 android:navigationIcon="@drawable/ic_search_24dp"
                 android:theme="?android:attr/actionBarTheme">
                 <TextView
                     android:id="@+id/search_action_bar_title"
                     style="@style/TextAppearance.SearchBar"
+		    android:alpha="0.8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/search_menu" />
@@ -75,8 +78,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/search_bar_margin"
-            app:cardCornerRadius="@dimen/search_bar_corner_radius"
-            app:cardElevation="5dp">
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
 			
             <FrameLayout
 				android:id="@+id/main_content"
