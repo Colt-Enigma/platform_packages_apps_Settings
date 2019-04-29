@@ -143,6 +143,13 @@
         android:key="theme"
         android:title="@string/device_theme"
         android:summary="@string/summary_placeholder" />-->
+    
+    <Preference
+        android:key="display_cutout_force_fullscreen_settings"
+        android:title="@string/display_cutout_force_fullscreen_title"
+        android:summary="@string/display_cutout_force_fullscreen_summary"
+        android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
+        settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
 
     <PreferenceCategory
         android:key="theme_customization_category"
