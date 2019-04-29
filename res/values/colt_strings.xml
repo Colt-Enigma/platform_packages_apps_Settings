@@ -170,6 +170,10 @@
 
     <!-- Toolbar -->
     <string name="settings_head_title">Colt Enigma</string>
+
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
 </resources>
 
 
