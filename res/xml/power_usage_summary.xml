@@ -78,4 +78,10 @@
        android:summary="@string/smart_pixels_summary"
        android:fragment="com.colt.settings.fragments.SmartPixels" />
 
+    <SwitchPreference
+	android:key="show_battery_estimate"
+        android:title="@string/battery_estimates_title"
+        android:summary="@string/battery_estimates_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
