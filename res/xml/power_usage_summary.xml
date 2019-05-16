@@ -82,6 +82,6 @@
         android:key="show_battery_estimate"
         android:title="@string/battery_estimates_title"
         android:summary="@string/battery_estimates_summary"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
 </PreferenceScreen>
