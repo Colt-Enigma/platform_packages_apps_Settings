@@ -188,4 +188,10 @@
             android:entries="@array/switch_style_entries"
             android:entryValues="@array/switch_style_values" />
 
+    <com.colt.settings.preferences.SystemSettingSwitchPreference
+        android:key="show_brand_toolbar"
+        android:title="@string/switch_brand_toolbar"
+        android:summaryOn="@string/switch_brand_toolbar_summary_on"
+        android:summaryOff="@string/switch_brand_toolbar_summary_off"
+        android:defaultValue="true" />
 </PreferenceScreen>
