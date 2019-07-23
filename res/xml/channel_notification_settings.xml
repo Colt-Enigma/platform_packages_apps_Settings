@@ -87,10 +87,18 @@
             android:summary="@string/app_notification_override_dnd_summary"
             settings:useAdditionalSummary="true"/>
 
+        <com.android.settings.RestrictedListPreference
+            android:key="sound_timeout"
+            android:order="16"
+            android:title="@string/app_notification_sound_timeout_title"
+            android:entries="@array/app_notification_sound_timeout_entries"
+            android:entryValues="@array/app_notification_sound_timeout_values"
+            android:persistent="false" />
+
         <!-- Lights -->
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="lights"
-            android:order="16"
+            android:order="17"
             android:title="@string/notification_show_lights_title"
             settings:useAdditionalSummary="true"/>
 
@@ -98,7 +106,7 @@
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="custom_light"
             android:dependency="lights"
-            android:order="17"
+            android:order="18"
             android:title="@string/custom_light_title"
             settings:defaultColorValue="0xFFFFFFFF" />
 
