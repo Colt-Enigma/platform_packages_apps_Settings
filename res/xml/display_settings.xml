@@ -150,12 +150,10 @@
         android:title="@string/color_theme"
         android:summary="@string/summary_placeholder" />
 
-    <ListPreference
-        android:key="systemui_theme"
-        android:title="@string/device_theme"
-        android:entries="@array/systemui_theme_entries"
-        android:entryValues="@array/systemui_theme_values"
-        settings:controller="com.android.settings.display.SystemUiThemePreferenceController" />
+    <Preference
+        android:key="theme_pref"
+        android:title="@string/theming"
+        android:fragment="com.android.settings.colt.fragments.ThemeFragment" />
 
     <Preference
         android:key="cutout_settings"
