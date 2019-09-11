@@ -39,4 +39,14 @@
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- About phone screen, Colt version -->
+    <string name="colt_version">ColtOS version</string>
+    <string name="colt_version_default">Unknown</string>
+    <string name="keywords_colt_version">colt version</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">build date, build info</string>
 </resources>
