@@ -29,7 +29,9 @@ import com.android.settings.core.BasePreferenceController;
 public class ColtVersionPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    static final String COLT_VERSION_PROPERTY = "ro.colt.display.version";
+    static final String COLT_VERSION_PROPERTY = "ro.modversion";
+    static final String COLT_RELEASETYPE_PROPERTY = "ro.colt.releasetype";
+    static final String COLT_ZIPTYPE_PROPERTY = "ro.colt.ziptype";
 
     public ColtVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -37,12 +39,20 @@ public class ColtVersionPreferenceController extends BasePreferenceController {
 
     @Override
     public int getAvailabilityStatus() {
-        return !TextUtils.isEmpty(SystemProperties.get(COLT_VERSION_PROPERTY)) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return !TextUtils.isEmpty(SystemProperties.get(COLT_VERSION_PROPERTY)) && !TextUtils.isEmpty(SystemProperties.get(COLT_RELEASETYPE_PROPERTY)) && !TextUtils.isEmpty(SystemProperties.get(COLT_ZIPTYPE_PROPERTY))
+                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(COLT_VERSION_PROPERTY,
-                mContext.getString(R.string.device_info_default));
+        String COLTVersion = SystemProperties.get(COLT_VERSION_PROPERTY);
+        String coltReleaseType = SystemProperties.get(COLT_RELEASETYPE_PROPERTY);
+        String coltZipType = SystemProperties.get(COLT_ZIPTYPE_PROPERTY);
+        if (!coltVersion.isEmpty() && !coltReleaseType.isEmpty() && !coltZipType.isEmpty()) {
+            return coltVersion + " | " + coltReleaseType + " | " + coltZipType;
+        } else {
+            return
+                mContext.getString(R.string.device_info_default);
+        }
     }
 }
