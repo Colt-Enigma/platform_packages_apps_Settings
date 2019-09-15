@@ -3275,12 +3275,12 @@
         </activity>
 
         <!-- ColtCenter -->
-        <activity android:name=".Settings$ColtSettingsLayoutActivity"
+        <activity android:name=".Settings$ColtSettingsActivity"
             android:label="@string/colt_settings_title"
 	    android:icon="@drawable/ic_homepage_colt"
             android:taskAffinity="">
             <intent-filter android:priority="1">
-                <action android:name="com.colt.settings.ColtSettingsLayout" />
+                <action android:name="com.colt.settings.ColtSettings" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
@@ -3295,7 +3295,7 @@
             <meta-data android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.homepage" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.colt.settings.ColtSettingsLayout" />
+                android:value="com.colt.settings.ColtSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
             <meta-data android:name="com.android.settings.summary"
