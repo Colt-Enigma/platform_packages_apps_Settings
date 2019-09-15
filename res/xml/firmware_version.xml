@@ -33,7 +33,7 @@
      <!-- Colt Logo -->
     <com.android.settingslib.widget.LayoutPreference
         android:key="colt_header_about"
-        android:layout="@layout/colt_header_about.xml"
+        android:layout="@layout/colt_header_about"
         android:selectable="false"/>
 
     <!-- Security patch -->
