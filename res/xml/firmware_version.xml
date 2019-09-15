@@ -21,6 +21,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- Colt Logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="colt_header_about"
+        android:layout="@layout/colt_header_about"
+        android:selectable="false"/>
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
