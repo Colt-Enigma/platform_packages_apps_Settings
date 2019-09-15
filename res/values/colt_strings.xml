@@ -165,4 +165,6 @@
     <string name="build_is_community_summary">Unofficial build by %s</string>
     <string name="build_is_community_summary_oopsie">Psst! please tell the builder that he/she forgot to add ColtOS build flags!</string>
 
+    <!-- Battery temperature -->
+    <string name="battery_temp">Battery temperature</string>
 </resources>
