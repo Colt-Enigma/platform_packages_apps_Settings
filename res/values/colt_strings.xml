@@ -78,4 +78,8 @@
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
     <string name="weather_title">Weather</string>
+
+    <!-- Hide gesture navigation bar -->
+    <string name="hide_gesture_navigation_bar_title">Hide gesture navigation bar</string>
+
 </resources>
