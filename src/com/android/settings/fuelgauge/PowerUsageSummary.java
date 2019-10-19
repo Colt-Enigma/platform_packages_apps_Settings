@@ -35,6 +35,7 @@ import android.os.Handler;
 import android.os.PowerManager;
 import android.os.SystemClock;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
 import android.provider.Settings.Global;
 import android.text.format.Formatter;
 import android.text.TextUtils;
@@ -66,17 +67,19 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.utils.PowerUtil;
 import com.android.settingslib.utils.StringUtil;
 import com.android.settingslib.widget.LayoutPreference;
+import androidx.preference.*;
 
 import java.util.Collections;
 import java.util.List;
 
+import com.colt.settings.preference.SystemSettingMasterSwitchPreference;
 /**
  * Displays a list of apps and subsystems that consume power, ordered by how much power was
  * consumed since the last time it was unplugged.
  */
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class PowerUsageSummary extends PowerUsageBase implements OnLongClickListener,
-        BatteryTipPreferenceController.BatteryTipListener {
+        BatteryTipPreferenceController.BatteryTipListener, Preference.OnPreferenceChangeListener {
 
     static final String TAG = "PowerUsageSummary";
 
@@ -91,6 +94,10 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     private static final String KEY_BATTERY_TEMP = "battery_temp";
     private static final String KEY_TIME_SINCE_LAST_FULL_CHARGE = "last_full_charge";
     private static final String KEY_BATTERY_SAVER_SUMMARY = "battery_saver_summary";
+    private static final String SMART_CHARGING = "smart_charging";
+
+    private SystemSettingMasterSwitchPreference mSmartCharging;
+
 
     @VisibleForTesting
     static final int BATTERY_INFO_LOADER = 1;
@@ -252,9 +259,25 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.battery_footer_summary);
         mBatteryUtils = BatteryUtils.getInstance(getContext());
 
+        mSmartCharging = (SystemSettingMasterSwitchPreference) findPreference(SMART_CHARGING);
+        mSmartCharging.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.SMART_CHARGING, 0) == 1));
+        mSmartCharging.setOnPreferenceChangeListener(this);
+
         restartBatteryInfoLoader();
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mSmartCharging) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SMART_CHARGING, value ? 1 : 0);
+            return true;
+		}
+        return false;
     }
 
     @Override
