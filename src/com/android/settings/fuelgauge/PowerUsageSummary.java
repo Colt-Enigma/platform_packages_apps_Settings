@@ -273,7 +273,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         }
         return super.onPreferenceTreeClick(preference);
     }
-	
+
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -487,7 +487,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
             final ValueAnimator animator = ValueAnimator.ofInt(prevLevel, currentLevel);
             animator.setDuration(BATTERY_ANIMATION_DURATION_MS_PER_LEVEL * diff);
             animator.setInterpolator(AnimationUtils.loadInterpolator(getContext(),
-                    android.R.interpolator.fast_out_slow_in));
+            android.R.interpolator.fast_out_slow_in));
             animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                 @Override
                 public void onAnimationUpdate(ValueAnimator animation) {
