@@ -1233,6 +1233,13 @@ public final class Utils extends com.android.settingslib.Utils {
         return context.getColor(R.color.accent_select_primary_text);
     }
 
+    public static String normalizeTitleCaseIfRequired(Context context, String input) {
+        if (!context.getResources().getBoolean(R.bool.language_capitalizes_nouns)) {
+            return input.toLowerCase();
+        }
+        return input;
+    }
+
     public static int getPINPasswordLength(LockPatternUtils lockPatternUtils, int userId) {
         int pinLength = 0;
         try {
