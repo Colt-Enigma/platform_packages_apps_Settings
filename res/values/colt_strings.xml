@@ -160,4 +160,6 @@
     <string name="directly_show_lock">Direct unlock</string>
     <string name="directly_show_lock_summary">Skip the swipe to unlock screen and immediately begin key entry</string>
 
+    <string name="pulse_on_new_tracks_title">Ambient music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played. Double tap on track info to skip to next track.</string>
 </resources>
