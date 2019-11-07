@@ -204,4 +204,8 @@
     <string name="lockpattern_settings_enable_error_path_title">Show pattern error</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Show pattern dots</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Swipe to screenshot</string>
+    <string name="swipe_to_screenshot_gesture_summary">Swipe three fingers to take screenshot</string>
 </resources>
