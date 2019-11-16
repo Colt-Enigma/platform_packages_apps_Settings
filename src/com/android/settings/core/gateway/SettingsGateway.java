@@ -150,6 +150,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.colt.settings.ColtSettings;
 import com.colt.settings.fragments.OmniJawsSettings;
+import com.colt.settings.fragments.GamingMode;
 
 public class SettingsGateway {
 
@@ -288,7 +289,8 @@ public class SettingsGateway {
             GlobalActionsPanelSettings.class.getName(),
 	    ColtSettings.class.getName(),
             OmniJawsSettings.class.getName(),
-            DarkModeSettingsFragment.class.getName()
+            DarkModeSettingsFragment.class.getName(),
+            GamingMode.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -329,5 +331,6 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
 	    Settings.ColtSettingsActivity.class.getName(),
             Settings.OmniJawsSettingsActivity.class.getName(),
+            Settings.GamingModeActivity.class.getName(),
     };
  }
