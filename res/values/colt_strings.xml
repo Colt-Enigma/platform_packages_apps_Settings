@@ -93,9 +93,6 @@
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
 
-    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Close</string>
-
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Auto Rotate Options</string>
     <string name="display_rotation_summary">Configure screen auto-rotate functions</string>
