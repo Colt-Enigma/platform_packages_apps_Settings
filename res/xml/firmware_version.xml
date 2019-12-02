@@ -27,7 +27,16 @@
         android:layout="@layout/colt_logo"
         android:selectable="false"/>
 
-    <!-- colt version -->
+    <!-- Device name -->
+    <Preference
+        android:key="about_device_name"
+        android:title="@string/about_device_name"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
+
+    <!-- Colt version -->
     <Preference
         android:key="colt_version"
         android:title="@string/colt_version"
