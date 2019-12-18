@@ -24,6 +24,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 
+import com.android.internal.util.colt.ColtUtils;
+
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
@@ -53,9 +55,7 @@ public class SystemNavigationPreferenceController extends BasePreferenceControll
     }
 
     static boolean isGestureAvailable(Context context) {
-        // Skip if the swipe up settings are not available
-        if (!context.getResources().getBoolean(
-                com.android.internal.R.bool.config_swipe_up_gesture_setting_available)) {
+        if (!ColtUtils.hasNavigationBar(context)) {
             return false;
         }
 
