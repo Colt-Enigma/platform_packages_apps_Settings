@@ -165,4 +165,8 @@
     <!-- Notification Vibration -->
     <string name="vibrate_on_notifications_title">Notification vibration</string>
     <string name="vibrate_on_notifications_summary">Vibrate on notifications</string>
+
+    <!-- Control Vibration intensities -->
+    <string name="vibration_intensity_ringer">Ringtone vibration intensity</string>
+    <string name="vibration_intensity_notification">Notification vibration intensity</string>
 </resources>
