@@ -166,6 +166,11 @@
         <ListPreference
             android:key="android.theme.customization.adaptive_icon_shape"
             android:title="@string/theme_customization_icon_shape_title"/>
+
+        <ListPreference
+            android:key="android.theme.customization.icon_pack.android"
+            android:title="@string/theme_customization_sysui_icon_title"/>
+
     </PreferenceCategory>
 
 
@@ -187,4 +192,5 @@
         android:summaryOn="@string/summary_dashboard_suggestions_enabled"
         android:summaryOff="@string/summary_dashboard_suggestions_disabled"
         android:defaultValue="true" />
+
 </PreferenceScreen>
