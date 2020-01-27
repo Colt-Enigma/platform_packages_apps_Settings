@@ -29,6 +29,8 @@ import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
+import com.android.internal.util.colt.ColtUtils;
+
 public class AmbientDisplayNotificationsPreferenceController extends
         TogglePreferenceController implements Preference.OnPreferenceChangeListener {
 
@@ -79,7 +81,8 @@ public class AmbientDisplayNotificationsPreferenceController extends
 
     @Override
     public int getAvailabilityStatus() {
-        return getAmbientConfig().pulseOnNotificationAvailable()
+        return !ColtUtils.hasAltAmbientDisplay(mContext.getApplicationContext()) &&
+               getAmbientConfig().pulseOnNotificationAvailable()
                 ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
