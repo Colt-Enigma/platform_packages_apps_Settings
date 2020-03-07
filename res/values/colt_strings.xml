@@ -298,4 +298,9 @@
     <string name="back_swipe_extended_title">Extended swipe action</string>
     <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
 
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Length of the gesture navigation bar</string>
+    <string name="home_handle_low_label">Short</string>
+    <string name="home_handle_high_label">Long</string>
+
 </resources>
