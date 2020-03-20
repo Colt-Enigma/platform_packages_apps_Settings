@@ -2,6 +2,7 @@
 <!--
      Copyright (C) 2018 The Android Open Source Project
      Copyright (C) 2019 ExtendedUI
+     Copyright (c) 2020 Ancient OS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,6 +21,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/settings_homepage_container"
+    android:background="@drawable/ancient"
     android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -28,11 +30,12 @@
         android:id="@+id/main_content_scrollable_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/homepage_spacer_height"
+        android:layout_marginTop="@dimen/homepage_spacer_margin"
         app:layout_behavior="com.android.settings.widget.FloatingAppBarScrollingViewBehavior">
 
         <LinearLayout
             android:id="@+id/homepage_container"
+            android:background="#00000000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -47,10 +50,13 @@
 
             <FrameLayout
                 android:id="@+id/main_content"
+                android:background="@drawable/ancient_background_primary"
                 android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_height="wrap_content"
-                android:animateLayoutChanges="true"
-                android:background="?android:attr/windowBackground"/>
+                android:elevation="6dp"
+                android:animateLayoutChanges="true"/>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

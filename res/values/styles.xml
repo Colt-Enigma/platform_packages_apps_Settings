@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2006 The Android Open Source Project
+     Copyright (C) 2020 Ancient OS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -418,9 +419,9 @@
         <item name="android:layout_marginBottom">@dimen/contextual_card_vertical_margin</item>
         <item name="android:layout_marginStart">@dimen/contextual_card_side_margin</item>
         <item name="android:layout_marginEnd">@dimen/contextual_card_side_margin</item>
-        <item name="cardBackgroundColor">@color/contextual_card_background</item>
+        <item name="cardBackgroundColor">@color/ancient_custom_bg</item>
         <item name="cardCornerRadius">@dimen/contextual_card_corner_radius</item>
-        <item name="cardElevation">0dp</item>
+        <item name="cardElevation">6dp</item>
         <item name="strokeColor">@color/contextual_card_stroke_color</item>
         <item name="strokeWidth">1dp</item>
         <item name="rippleColor">?android:attr/colorControlHighlight</item>
@@ -430,7 +431,7 @@
         <item name="android:layout_margin">@dimen/search_bar_margin</item>
         <item name="cardCornerRadius">32dp</item>
         <item name="enforceMaterialTheme">true</item>
-        <item name="cardElevation">3dp</item>
+        <item name="cardElevation">8dp</item>
         <item name="shapeAppearance">@null</item>
     </style>
 

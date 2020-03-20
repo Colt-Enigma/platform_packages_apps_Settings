@@ -38,6 +38,6 @@
     <dimen name="homepage_spacer_height_base">60dp</dimen>
     <dimen name="homepage_spacer_margin_base">115dp</dimen>
     <dimen name="homepage_spacer_height">180dp</dimen>
-    <dimen name="homepage_spacer_margin">235dp</dimen>
+    <dimen name="homepage_spacer_margin">200dp</dimen>
 
 </resources>

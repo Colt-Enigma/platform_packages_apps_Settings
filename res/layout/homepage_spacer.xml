@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2019 Extended-UI
+     Copyright (c) 2020 Ancient OS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,17 +21,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/settings_homepage_spacer"
     android:layout_width="match_parent"
+    android:elevation="6dp"
     android:layout_height="@dimen/homepage_spacer_height"
     android:outlineProvider="none"
-    app:cardBackgroundColor="?android:attr/colorPrimary"
+    app:cardBackgroundColor="#00000000"
     app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
 
     <TextView 
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        background="@drawable/ancient_background_primary" 
+        android:paddingLeft="4.0dip" 
+        android:paddingRight="4.0dip" 
         android:textAppearance="@style/homepage_spacer_title_style"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="20dp"
         android:text="@string/settings_label" />
 
 </com.google.android.material.card.MaterialCardView>
