@@ -52,7 +52,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     contextualcards \
     settings-logtags \
     zxing-core-1.7 \
-    glide
+    glide \
+    faceunlock_utils
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     packages/apps/ColtCenter/res
