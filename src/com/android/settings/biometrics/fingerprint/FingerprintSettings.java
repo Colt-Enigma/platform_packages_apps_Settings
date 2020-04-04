@@ -47,8 +47,6 @@ import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.PreferenceViewHolder;
 
-import com.android.internal.custom.app.LineageContextConstants;
-
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.SubSettings;
@@ -253,8 +251,6 @@ public class FingerprintSettings extends SubSettings {
         }
 
         private void retryFingerprint() {
-            PackageManager packageManager = getPackageManager();
-            mHasFod = packageManager.hasSystemFeature(LineageContextConstants.Features.FOD);
             if (mRemovalSidecar.inProgress()
                     || 0 == mFingerprintManager.getEnrolledFingerprints(mUserId).size()) {
                 return;
