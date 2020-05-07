@@ -54,7 +54,9 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     settings-logtags \
     zxing-core-1.7 \
     glide \
-    airbnb-lottie
+    airbnb-lottie \
+    expandablebottombar \
+    kotlin-stdlib
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     packages/apps/ColtCenter/res
@@ -62,7 +64,8 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
-    --extra-packages com.colt.settings
+    --extra-packages com.colt.settings \
+    --extra-packages github.com.st235.lib_expandablebottombar
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
@@ -79,7 +82,9 @@ include $(BUILD_PACKAGE)
 include $(CLEAR_VARS)
 
 LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := \
-    contextualcards:libs/contextualcards.aar
+    contextualcards:libs/contextualcards.aar \
+    expandablebottombar:libs/expandable_bottom_bar_116.aar
+
 include $(BUILD_MULTI_PREBUILT)
 
 # Use the following include to make our test apk.
