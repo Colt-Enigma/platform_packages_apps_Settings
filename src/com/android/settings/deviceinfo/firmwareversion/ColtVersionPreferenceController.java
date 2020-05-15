@@ -29,7 +29,7 @@ import com.android.settings.core.BasePreferenceController;
 public class ColtVersionPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    static final String COLT_VERSION_PROPERTY = "ro.colt.version";
+    static final String COLT_VERSION_PROPERTY = "ro.colt.release.version";
 
     public ColtVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
