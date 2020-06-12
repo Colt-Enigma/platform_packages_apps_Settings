@@ -20,7 +20,6 @@
     <com.android.settings.widget.HomepagePreference
         android:key="top_level_colt_settings"
 	android:title="@string/colt_settings_dash_title"
-        android:summary="@string/colt_settings_summary"
         android:icon="@drawable/ic_settings_colt"
         android:order="-150"
         android:fragment="com.colt.enigma.ColtEnigma"

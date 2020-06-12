@@ -51,6 +51,10 @@ import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.drawer.Tile;
 import com.android.settingslib.search.SearchIndexable;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements SplitLayoutListener,
         PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
@@ -64,6 +68,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     private int mPaddingHorizontal;
     private boolean mScrollNeeded = true;
     private boolean mFirstStarted = true;
+    private static final String KEY_COLTENIGMA = "top_level_colt_settings";
 
     public TopLevelSettings() {
         final Bundle args = new Bundle();
@@ -92,6 +97,13 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         super.onAttach(context);
         HighlightableMenu.fromXml(context, getPreferenceScreenResId());
         use(SupportPreferenceController.class).setActivity(getActivity());
+        updateColtSummary();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateColtSummary();
     }
 
     @Override
@@ -348,6 +360,17 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     private interface PreferenceJob {
         default void init() {}
         void doForEach(Preference preference);
+    }
+
+    private void updateColtSummary() {
+        Preference coltenigma = findPreference(KEY_COLTENIGMA);
+        if (coltenigma != null) {
+            String[] summaries = getContext().getResources().getStringArray(
+                    R.array.coltenigma_summaries);
+            Random rnd = new Random();
+            int summNO = rnd.nextInt(summaries.length);
+            coltenigma.setSummary(summaries[summNO]);
+        }
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
