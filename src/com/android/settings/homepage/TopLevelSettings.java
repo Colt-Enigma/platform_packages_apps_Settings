@@ -38,12 +38,14 @@ import com.android.settingslib.search.SearchIndexable;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements
         PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
 
     private static final String TAG = "TopLevelSettings";
+    private static final String KEY_COLTENIGMA = "top_level_colt_settings";
 
     public TopLevelSettings() {
         final Bundle args = new Bundle();
@@ -71,6 +73,13 @@ public class TopLevelSettings extends DashboardFragment implements
     public void onAttach(Context context) {
         super.onAttach(context);
         use(SupportPreferenceController.class).setActivity(getActivity());
+        updateColtSummary();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateColtSummary();
     }
 
     @Override
@@ -101,6 +110,17 @@ public class TopLevelSettings extends DashboardFragment implements
     protected boolean shouldForceRoundedIcon() {
         return getContext().getResources()
                 .getBoolean(R.bool.config_force_rounded_icon_TopLevelSettings);
+    }
+
+    private void updateColtSummary() {
+        Preference coltenigma = findPreference(KEY_COLTENIGMA);
+        if (coltenigma != null) {
+            String[] summaries = getContext().getResources().getStringArray(
+                    R.array.coltenigma_summaries);
+            Random rnd = new Random();
+            int summNO = rnd.nextInt(summaries.length);
+            coltenigma.setSummary(summaries[summNO]);
+        }
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

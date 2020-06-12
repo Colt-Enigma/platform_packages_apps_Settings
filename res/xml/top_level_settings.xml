@@ -49,7 +49,6 @@
     <Preference
         android:key="top_level_colt_settings"
         android:title="@string/colt_settings_title"
-        android:summary="@string/colt_settings_summary"
         android:icon="@drawable/ic_homepage_colt"
         android:order="-90"
         android:fragment="com.colt.settings.ColtSettings"/>
