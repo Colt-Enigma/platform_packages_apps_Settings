@@ -308,4 +308,6 @@
     <!-- IME button space -->
     <string name="navigation_bar_ime_space_title">Enable to show IME button space and pill</string>
 
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
 </resources>
