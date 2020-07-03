@@ -21,6 +21,11 @@
     android:key="security_dashboard_page"
     android:title="@string/security_settings_title">
 
+    <Preference
+        android:key="security_animation"
+        android:layout="@layout/security_animation"
+        android:order="-20" />
+
     <PreferenceCategory
         android:order="1"
         android:key="dashboard_tile_placeholder" />
