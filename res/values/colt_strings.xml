@@ -184,4 +184,5 @@
     <!-- AOSP Gestures -->
     <string name="aosp_gesture_preference">System Gestures</string>
     <string name="aosp_gesture_summary">Stock gestures included with AOSP</string>
+    <string name="system_navigation_summary">Configure navigation menus</string>
 </resources>
