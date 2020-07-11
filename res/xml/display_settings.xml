@@ -193,7 +193,14 @@
     <PreferenceCategory
         android:title="@string/customization_category_title">
 
-        <com.colt.enigma.preference.SecureSettingSwitchPreference
+        <Preference
+            android:key="icon_manager"
+            android:title="@string/icon_manager_title"
+            android:summary="@string/icon_manager_summary">
+            <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
+        </Preference>
+
+	<com.colt.enigma.preference.SecureSettingSwitchPreference
                 android:key="qs_show_data_usage"
                 android:title="@string/qs_show_data_usage_title"
                 android:summary="@string/qs_show_data_usage_summary"
