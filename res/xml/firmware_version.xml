@@ -30,11 +30,10 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>  -->
 
-     <!-- Colt Logo -->
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="colt_header_about"
-        android:layout="@layout/colt_header_about"
-        android:selectable="false"/>
+    <!-- Colt Animation -->
+    <Preference
+        android:key="about_colt_animation"
+        android:layout="@layout/about_colt_animation" />
 
     <!-- Colt version -->
     <Preference
