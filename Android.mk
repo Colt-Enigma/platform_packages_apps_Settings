@@ -57,8 +57,6 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     packages/apps/ColtCenter/res
 
-LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res-coltos
-
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
