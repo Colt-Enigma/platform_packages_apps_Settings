@@ -35,6 +35,7 @@ import android.view.View;
 import android.view.View.OnLongClickListener;
 import android.widget.TextView;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.loader.app.LoaderManager;
@@ -77,7 +78,11 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     private static final String KEY_SCREEN_USAGE = "screen_usage";
     private static final String KEY_TIME_SINCE_LAST_FULL_CHARGE = "last_full_charge";
     private static final String KEY_BATTERY_TEMP = "battery_temp";
+    private static final String KEY_SMART_CHARGING_CATEGORY = "smart_charging_category";
+    private static final String KEY_BATTERY_INFO_CATEGORY = "battery_info_category";
 
+    private PreferenceCategory mSmartChargingCat;
+    private PreferenceCategory mBatteryInfoCat;
     @VisibleForTesting
     static final int BATTERY_INFO_LOADER = 1;
     @VisibleForTesting
@@ -233,9 +238,12 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         mBatteryTemp = (PowerGaugePreference) findPreference(KEY_BATTERY_TEMP);
         mBatteryUtils = BatteryUtils.getInstance(getContext());
 
+        mBatteryInfoCat = (PreferenceCategory) findPreference(KEY_BATTERY_INFO_CATEGORY);
+
         if (Utils.isBatteryPresent(getContext())) {
             restartBatteryInfoLoader();
         }
+
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
     }

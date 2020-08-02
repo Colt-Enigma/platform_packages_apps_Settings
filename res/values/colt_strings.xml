@@ -174,4 +174,9 @@
     <string name="adaptive_playback_timeout_5_min_summary">On (5 minutes)</string>
     <string name="adaptive_playback_timeout_10_min">10 minutes</string>
     <string name="adaptive_playback_timeout_10_min_summary">On (10 minutes)</string>
+
+    <!-- Battery categorization -->
+    <string name="battery_saver_category_title">Battery saver</string>
+    <string name="smart_charging_category_title">Smart charging</string>
+    <string name="battery_usage_category_title">Battery usage</string>
 </resources>
