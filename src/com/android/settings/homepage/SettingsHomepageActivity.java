@@ -63,13 +63,11 @@ public class SettingsHomepageActivity extends FragmentActivity {
         root.setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
 
-<<<<<<< HEAD
         setHomepageContainerPaddingTop();
-=======
+
         Context context = getApplicationContext();
 
         mUserManager = context.getSystemService(UserManager.class);
->>>>>>> 929842ed7f... SearchBar: Add avatar to search bar
 
         final Toolbar toolbar = findViewById(R.id.search_action_bar);
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
