@@ -182,4 +182,9 @@
     <!-- Hardware info -->
     <string name="platform_revision">Platform</string>
     <string name="total_ram">Total RAM</string>
+
+    <!-- Backup Transport selection settings menu and activity title -->
+    <string name="backup_transport_setting_label">Change backup provider</string>
+    <string name="backup_transport_title">Select backup provider</string>
+
 </resources>
