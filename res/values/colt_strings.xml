@@ -277,4 +277,8 @@
     <string name="network_options_title">Options</string>
     <string name="network_traffic_autohide_title">Hide network traffic indicator is inactive</string>
     <string name="network_traffic_autohide_summary">Hide when network traffic indicator is below 1 KB/s</string>
+
+    <!-- Backup Transport selection settings menu and activity title -->
+    <string name="backup_transport_setting_label">Change backup provider</string>
+    <string name="backup_transport_title">Select backup provider</string>
 </resources>
