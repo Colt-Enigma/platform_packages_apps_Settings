@@ -21,6 +21,12 @@
     -->
     <integer name="config_fingerprintSensorLocation">0</integer>
 
+    <!-- Battery Health -->
+    <string name="config_batCurCap"></string>
+    <string name="config_batDesCap"></string>
+    <string name="config_batChargeCycle"></string>
+    <bool name="config_supportBatteryHealth">true</bool>
+
     <!-- Whether to add AGPS parameter settings -->
     <bool name="config_agps_enabled">false</bool>
 
