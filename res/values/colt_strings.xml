@@ -125,4 +125,9 @@
     <string name="custom_light_on_time_title">Light ON time during led pulse (ms)</string>
     <string name="custom_light_off_time_title">Light OFF time during led pulse (ms)"</string>
     <string name="value_equals_default">def</string>
+
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Haptic feedback</string>
+    <string name="back_gesture_haptic_summary">Enable haptic tick effect on back gesture</string>
+
 </resources>
