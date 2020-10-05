@@ -145,8 +145,8 @@
     <string name="density_category">Density options</string>
 
     <!-- Navbar length -->
-    <string name="navbar_length">Gesture bar length</string>
-    <string name="short_label">Short</string>
+    <string name="navbar_length">Gesture bar length</string> 
+    <string name="hidden_label">Hidden</string>
     <string name="long_label">Long</string>
 
     <!-- Cycle through ringer modes gesture -->
