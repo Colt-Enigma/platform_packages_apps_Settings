@@ -24,23 +24,24 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="my_device_info_header"
         android:order="0"
-        android:layout="@layout/settings_entity_header"
+        android:layout="@layout/device_info_header"
         android:selectable="false"
-        settings:isPreferenceVisible="false"/>
+        settings:isPreferenceVisible="true"/>
 
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
-        android:order="1"
+        android:order="54"
         android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
-        settings:enableCopying="true"/>
+        settings:enableCopying="true"
+        settings:isPreferenceVisible="false" />
 
     <!-- Account name -->
     <Preference
         android:key="branded_account"
-        android:order="2"
+        android:order="4"
         android:title="@string/my_device_info_account_preference_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
@@ -94,12 +95,12 @@
         settings:keywords="@string/keywords_sim_status"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <!-- Model & hardware -->
     <Preference
         android:key="device_model"
-        android:order="31"
+        android:order="2"
         android:title="@string/model_info"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
@@ -110,7 +111,7 @@
     <!-- Android version -->
     <Preference
         android:key="firmware_version"
-        android:order="42"
+        android:order="1"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
@@ -123,7 +124,7 @@
         android:title="@string/wifi_ip_address"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:enableCopying="true"/>
 
     <!-- Wi-Fi MAC address -->
@@ -189,7 +190,7 @@
         android:order="53"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
 

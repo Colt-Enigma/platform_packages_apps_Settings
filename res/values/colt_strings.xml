@@ -293,4 +293,8 @@
     <string name="disable_fonts_installed_title">Font picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the font picker.</string>
     <string name="font_picker_progress">Applying new font\u2026</string>
 
+    <!-- About phone cards -->
+    <string name="storage_card_title">Storage</string>
+    <string name="storage_card_info">Occupied</string>
+    <string name="about_device_rom_title">ColtOS %s</string>
 </resources>

@@ -122,13 +122,8 @@ public class MyDeviceInfoFragment extends DashboardFragment
         // TODO: Migrate into its own controller.
         final LayoutPreference headerPreference =
                 getPreferenceScreen().findPreference(KEY_MY_DEVICE_INFO_HEADER);
-        final boolean shouldDisplayHeader = getContext().getResources().getBoolean(
-                R.bool.config_show_device_header_in_device_info);
-        headerPreference.setVisible(shouldDisplayHeader);
-        if (!shouldDisplayHeader) {
-            return;
-        }
         final View headerView = headerPreference.findViewById(R.id.entity_header);
+        headerPreference.setVisible(true);
         final Activity context = getActivity();
         final Bundle bundle = getArguments();
         final EntityHeaderController controller = EntityHeaderController
@@ -149,7 +144,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
                     com.android.settingslib.Utils.getUserIcon(getActivity(), userManager, info));
         }
 
-        controller.done(context, true /* rebindActions */);
+	controller.done(context, true /* rebindActions */);
     }
 
     @Override
