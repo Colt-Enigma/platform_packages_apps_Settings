@@ -68,4 +68,7 @@
     <!-- Colt Enigma -->
     <string name="colt_settings_dash_title">ColtEnigma</string>
     <string name="colt_settings_summary">Our favourite customization hub!!</string>
+
+    <!-- Radio Info -->
+    <string name="radio_info_title">Radio info</string>
 </resources>
