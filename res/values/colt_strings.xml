@@ -509,4 +509,7 @@
     <!-- Running services - Background processes tab -->
     <string name="background_processes_settings_title">Background processes</string>
     <string name="runningservices_settings_title">Running services</string>
+    
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
 </resources>
