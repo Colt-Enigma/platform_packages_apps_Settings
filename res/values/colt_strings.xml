@@ -21,4 +21,7 @@
     <!-- ColtOS Installation Stats -->
     <string name="colt_stats_title">ColtOS Stats</string>
     <string name="colt_stats_summary">Just counting how many devices we run on</string>
+
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
 </resources>
