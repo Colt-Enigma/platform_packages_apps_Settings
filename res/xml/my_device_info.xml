@@ -75,6 +75,14 @@
         android:title="@string/status_up_time"
         settings:layout="@layout/abt_card_preference_top" />
 
+    <!-- Device deep sleep time -->
+        <Preference
+            android:key="sleep_time"
+            android:order="49"
+            android:title="@string/status_sleep_time"
+            android:summary="@string/summary_placeholder"
+            android:selectable="false"/>
+
     <!-- Legal information -->
     <Preference
         android:fragment="com.android.settings.LegalSettings"
@@ -110,6 +118,7 @@
         <intent android:action="android.settings.SHOW_MANUAL" />
     </Preference>
 
+<<<<<<< HEAD
     <!-- Feedback on the device -->
     <Preference
         android:key="device_feedback"
