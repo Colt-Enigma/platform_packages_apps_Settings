@@ -13,5 +13,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Smart Charging -->
-    <java-symbol type="bool" name="config_supportSmartCharging"/>
+    <java-symbol type="bool" name="config_supportSmartFeatures"/>
 </resources>
