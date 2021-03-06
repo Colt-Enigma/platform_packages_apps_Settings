@@ -20,4 +20,7 @@
 
     <dimen name="storage_card_min_width">148dp</dimen>
     <dimen name="storage_card_min_height">@dimen/storage_card_min_width</dimen>
+
+    <!-- ProgressCard -->
+    <dimen name="progress_card_horizontal_padding">16dp</dimen>
 </resources>
