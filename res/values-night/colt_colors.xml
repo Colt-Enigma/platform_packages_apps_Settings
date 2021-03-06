@@ -18,4 +18,7 @@
     <color name="op_control_text_color_primary">#ffffffff</color>
     <color name="op_control_text_color_secondary">#89ffffff</color>
 
+    <!-- ProgressCard -->
+    <color name="progress_card_progress_color">#14000000</color>
+
 </resources>

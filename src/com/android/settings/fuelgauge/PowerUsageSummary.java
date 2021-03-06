@@ -52,6 +52,7 @@ import com.android.settings.fuelgauge.batterytip.BatteryTipPreferenceController;
 import com.android.settings.fuelgauge.batterytip.tips.BatteryTip;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.widget.ProgressCard;
 import com.android.settingslib.fuelgauge.EstimateKt;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.utils.PowerUtil;
@@ -163,14 +164,10 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
             };
 
     protected void updateViews(List<BatteryInfo> batteryInfos) {
-        final BatteryMeterView batteryView = mBatteryLayoutPref
-                .findViewById(R.id.battery_header_icon);
-        final TextView percentRemaining =
-                mBatteryLayoutPref.findViewById(R.id.battery_percent);
-        final TextView summary1 = mBatteryLayoutPref.findViewById(R.id.summary1);
+        final ProgressCard mBatteryInfoCard = mBatteryLayoutPref.findViewById(R.id.battery_info_card);
         BatteryInfo oldInfo = batteryInfos.get(0);
         BatteryInfo newInfo = batteryInfos.get(1);
-        percentRemaining.setText(Utils.formatPercentage(oldInfo.batteryLevel));
+        mBatteryInfoCard.setTitle(Utils.formatPercentage(oldInfo.batteryLevel));
 
         // set the text to the old estimate (copied from battery info). Note that this
         // can sometimes say 0 time remaining because battery stats requires the phone
@@ -181,10 +178,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         final String NewEstimateString = mPowerFeatureProvider.getEnhancedEstimateDebugString(
                 Formatter.formatShortElapsedTime(getContext(),
                         PowerUtil.convertUsToMs(newInfo.remainingTimeUs)));
-        summary1.setText(OldEstimateString + "\n" + NewEstimateString);
-
-        batteryView.setBatteryLevel(oldInfo.batteryLevel);
-        batteryView.setCharging(!oldInfo.discharging);
+        mBatteryInfoCard.setSummary(OldEstimateString + "\n" + NewEstimateString);
     }
 
     private LoaderManager.LoaderCallbacks<List<BatteryTip>> mBatteryTipsCallbacks =
@@ -446,7 +440,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 mBatteryInfoLoaderCallbacks);
         if (mPowerFeatureProvider.isEstimateDebugEnabled()) {
             // Set long click action for summary to show debug info
-            View header = mBatteryLayoutPref.findViewById(R.id.summary1);
+            ProgressCard header = mBatteryLayoutPref.findViewById(R.id.battery_info_card);
             header.setOnLongClickListener(this);
         }
     }
