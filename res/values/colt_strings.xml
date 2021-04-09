@@ -399,5 +399,8 @@
     <string name="clipboard_toast_info_title">Clipboard access alerts</string>
     <string name="clipboard_toast_info_show_important">Show only important alerts</string>
     <string name="clipboard_toast_info_show_all">Show all access alerts</string>
+
+    <string name="dot_lightMode">Light Theme</string>
+    <string name="dot_darkMode">Dark Theme</string>
 </resources>
 

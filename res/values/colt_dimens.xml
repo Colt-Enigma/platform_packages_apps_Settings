@@ -23,4 +23,6 @@
 
     <!-- ProgressCard -->
     <dimen name="progress_card_horizontal_padding">16dp</dimen>
-</resources>
+
+    <dimen name="cardStrokeWidth">3dp</dimen>
+</resources> 
