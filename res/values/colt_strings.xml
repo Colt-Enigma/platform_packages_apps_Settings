@@ -193,4 +193,8 @@
     <string name="battery_illustration_description">Monitor battery health, usage and improve battery usage.</string>
 
     <string name="battery_temp">Battery temperature</string>
+
+    <!-- One shot automatic brightness -->
+    <string name="auto_brightness_one_shot_title">One shot auto-brightness</string>
+    <string name="auto_brightness_one_shot_summary">Brightness adjustment will only occur at the moment the screen is turned on</string>
 </resources>
