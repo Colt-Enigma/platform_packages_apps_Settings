@@ -281,4 +281,8 @@
     <string name="small_label">1 dp</string>
     <string name="big_label">4 dp</string>
 
+    <!-- One shot automatic Brightness -->
+    <string name="auto_brightness_one_shot_title">Only apply when screen is turned on</string>
+    <string name="auto_brightness_one_shot_summary">Adjustment will occur one time</string>
+
 </resources>
