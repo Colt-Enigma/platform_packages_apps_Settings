@@ -52,4 +52,8 @@
         <item name="android:fontFamily">@*android:string/config_lightFontFamily</item>
     </style>
 
+    <!-- Fingerprint -->
+    <style name="FingerprintGravity">
+        <item name="android:gravity">center</item>
+    </style>
 </resources>
