@@ -25,6 +25,7 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 
 import androidx.fragment.app.Fragment;
@@ -89,7 +90,13 @@ public class TopLevelSettings extends DashboardFragment implements
     public void onResume() {
         super.onResume();
         updateColtSummary();
-	updateTheme();
+	boolean mCustomIcon = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.DASHBOARD_ICONS, 0, UserHandle.USER_CURRENT) == 1;
+        if (mCustomIcon) {
+            updateTheme();
+        } else {
+            // nothing todo
+        }
     }
 
     @Override
@@ -164,13 +171,20 @@ public class TopLevelSettings extends DashboardFragment implements
                         aIcon.setCustomForegroundColor(getResources().getColor(android.R.color.white));
                         break;
                     case 2:
-                        aIcon.setCustomBackgroundColor(mAccentColor);
+                        aIcon.setCustomForegroundColor(mAccentColor);
                         break;
                     case 3:
+                        aIcon.setCustomBackgroundColor(mAccentColor);
+                        break;
+                    case 4:
+                        aIcon.setCustomBackgroundColor(mAccentColor);
+                        aIcon.setCustomForegroundColor(getResources().getColor(android.R.color.white));
+                        break;
+                    case 5:
                         aIcon.setCustomForegroundColor(mNormalColor);
                         aIcon.setCustomBackgroundColor(0);
                         break;
-                    case 4:
+                    case 6:
                         aIcon.setCustomForegroundColor(mAccentColor);
                         aIcon.setCustomBackgroundColor(0);
                         break;
@@ -191,13 +205,20 @@ public class TopLevelSettings extends DashboardFragment implements
                             fg.setTint(getResources().getColor(android.R.color.white));
                             break;
                         case 2:
-                            bg.setTint(mAccentColor);
+                            fg.setTint(mAccentColor);
                             break;
                         case 3:
+                            bg.setTint(mAccentColor);
+                            break;
+                        case 4:
+                            bg.setTint(mAccentColor);
+                            fg.setTint(getResources().getColor(android.R.color.white));
+                            break;
+                        case 5:
                             fg.setTint(mNormalColor);
                             bg.setTint(0);
                             break;
-                        case 4:
+                        case 6:
                             fg.setTint(mAccentColor);
                             bg.setTint(0);
                             break;
