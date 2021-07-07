@@ -315,6 +315,8 @@
 	<item name="android:textStyle">normal</item>
         <item name="android:ellipsize">marquee</item>
         <item name="android:singleLine">true</item>
+
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
     </style>
 
     <style name="TextAppearance.HomepageCardTitle"
@@ -498,6 +500,7 @@
 
     <style name="SettingsHeaderStyle">
         <item name="android:textColor">?android:attr/colorAccent</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
     </style>
 
     <style name="ConditionCardBorderlessButton"
