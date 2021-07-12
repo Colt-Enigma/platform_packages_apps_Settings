@@ -1522,4 +1522,26 @@
         <item>@string/rtt_settings_always_visible</item>
     </string-array>
 
+   <!-- Random UserNames For Settings -->
+    <string-array name="random_user_names">
+    <item>ColtEnigma</item>
+    <item>ColtOS</item>
+    <item>Settings</item>
+    <item>Stay Colt-ify</item>
+    <item>Hi, Chief</item>
+    <item>Hi, BOOMER</item>
+    <item>Hi, Agent 47</item>
+    <item>Hello, Mario</item>
+    <item>Hello, Rocky Bhai</item>
+    <item>Hi, Iron Man</item>
+    <item>Hello, Batman</item>
+    <item>Hello, James Bond</item>
+    <item>Hi, Jon Snow</item>
+    <item>The Terminator</item>
+    <item>Hello, Scooby-Doo</item>
+    <item>Hi, Harry Potter</item>
+    <item>Hello, Pikachu</item>
+    <item>Mr.Mime</item>
+</string-array>
+
 </resources>

@@ -26,12 +26,25 @@
     app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
 
     <TextView 
+	android:id="@+id/userNameTextView"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:textAppearance="@style/homepage_spacer_title_style"
+	android:text="User"
+	android:textAppearance="@style/homepage_spacer_title_style"
         android:layout_gravity="left"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/greetingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" 
+        android:text="Good Morning!!"
+	android:layout_marginTop="65dp"
         android:layout_marginLeft="15dp"
-        android:text="@string/settings_label" />
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="15sp"/>
 
 </com.google.android.material.card.MaterialCardView>
