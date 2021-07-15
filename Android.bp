@@ -32,7 +32,9 @@ android_library {
            "ColtEnigma/src/**/*.java",
     ],
 
-    aaptflags: ["--extra-packages com.colt.settings"],
+    aaptflags: ["--extra-packages com.colt.settings",
+		"--extra-packages com.factor.bouncy"
+    ],
 
     resource_dirs: ["res",
                     "ColtEnigma/res"
@@ -72,6 +74,7 @@ android_library {
         "android.hardware.dumpstate-V1.1-java",
         "faceunlock_framework",
         "androidx.dynamicanimation_dynamicanimation",
+        "bouncy",
     ],
 
     libs: [
@@ -111,4 +114,10 @@ android_app {
 android_library_import {
     name: "contextualcards",
     aars: ["libs/contextualcards.aar"],
+}
+
+android_library_import {
+    name: "bouncy",
+    aars: ["libs/bouncy-release.aar"],
+    sdk_version: "current",
 }
