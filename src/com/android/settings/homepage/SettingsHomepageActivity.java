@@ -168,6 +168,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
     @Override
     public void onResume() {
         super.onResume();
+        toolbarAvatar.setImageDrawable(getCircularUserIcon(getApplicationContext()));
     }
 
     private boolean isHomepageSpacerEnabled() {
