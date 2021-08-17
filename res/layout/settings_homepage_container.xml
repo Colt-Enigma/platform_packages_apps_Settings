@@ -14,56 +14,96 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/settings_homepage_container"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/settings_header_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="@string/dashboard_title"
+            app:expandedTitleMarginStart="24dp"
+            app:expandedTitleMarginEnd="24dp"
+            app:expandedTitleMarginBottom="96dp"
+            app:expandedTitleTextAppearance="@style/SettingsHeaderStyle"
+            app:collapsedTitleTextAppearance="@style/SettingsHeaderStyle"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/homepage_header_container"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:titleMarginStart="24dp"
+                app:layout_collapseMode="pin" />
+
+            <ImageView
+                android:id="@+id/toolbar_avatar"
+                android:layout_width="@dimen/search_bar_avatar_dimens"
+                android:layout_height="@dimen/search_bar_avatar_dimens"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="24dp"
+                app:layout_collapseMode="none"
+                app:layout_collapseParallaxMultiplier="1.32"
+                android:layout_gravity="end|center_horizontal"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <com.android.settings.edgeeffect.SpringNestScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+	android:id="@+id/main_content_scrollable_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-	<androidx.core.widget.NestedScrollView
-            android:id="@+id/main_content_scrollable_container"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            app:layout_behavior="com.android.settings.widget.FloatingAppBarScrollingViewBehavior">
+        <LinearLayout
+            android:id="@+id/homepage_container"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-64dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/homepage_container"
+            <FrameLayout
+		android:id="@+id/contextual_cards_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/homepage_container_bg"
-                android:orientation="vertical">
+		android:layout_marginStart="@dimen/contextual_card_side_margin"
+                android:layout_marginEnd="@dimen/contextual_card_side_margin"/>
 
-                <com.google.android.material.appbar.AppBarLayout
-                    android:layout_width="match_parent"
-                    android:touchscreenBlocksFocus="false"
-                    android:keyboardNavigationCluster="false"
-                    android:layout_height="wrap_content">
-                    <include layout="@layout/homepage_spacer"/>
-                    <include layout="@layout/search_bar"/>
-                </com.google.android.material.appbar.AppBarLayout>
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never">
 
-                <FrameLayout
-                    android:id="@+id/contextual_cards_content"
-                    android:layout_width="match_parent"
+		<LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/contextual_card_side_margin"
-                    android:layout_marginEnd="@dimen/contextual_card_side_margin" />
+		    android:orientation="vertical">
 
-                <FrameLayout
-                    android:id="@+id/main_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:animateLayoutChanges="true"
-                    android:background="?android:colorPrimary" />
+		<include layout="@layout/search_bar" />
 
-            </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
+	</LinearLayout>
+            </androidx.core.widget.NestedScrollView>
 
+            <FrameLayout
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="?android:attr/windowBackground"
+                android:layout_marginStart="@dimen/main_content_side_margin"
+                android:layout_marginEnd="@dimen/main_content_side_margin"/>
+
+        </LinearLayout>
     </com.android.settings.edgeeffect.SpringNestScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

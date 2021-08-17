@@ -13,4 +13,9 @@
     <!-- ProgressCard -->
     <color name="progress_card_progress_color">#14000000</color>
     <color name="progress_card_background_color">@*android:color/primary_device_default_settings_light</color>
+
+    <color name="search_bar_background_custom">#f1f1f1</color>
+
+    <color name="search_bar_text_color">#FFB1B1B1</color>
+    <color name="settings_header_color">#FF000000</color>
 </resources>
