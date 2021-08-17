@@ -307,10 +307,6 @@
     <!-- Battery saver -->
     <string name="battery_saver_is_enabled">Battery saver is enabled</string>
 
-    <!-- Random Strings For Settigns-->    
-    <string name="random_username">User</string>
-    <string name="greeting">Good Night!!</string>
-
      <!-- Vibration patterns -->
     <string name="vibration_pattern_title">Ringtone vibration pattern</string>
     <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>

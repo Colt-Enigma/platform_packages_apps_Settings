@@ -15,7 +15,6 @@
  */
 
 package com.android.settings.homepage;
-import android.content.res.Resources;
 
 import android.animation.LayoutTransition;
 import android.app.ActivityManager;
@@ -32,7 +31,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toolbar;
 
 import androidx.annotation.VisibleForTesting;
@@ -51,9 +49,6 @@ import com.android.settings.homepage.contextualcards.ContextualCardsFragment;
 import com.android.settings.overlay.FeatureFactory;
 
 import com.android.settingslib.drawable.CircleFramedDrawable;
-
-import java.util.Random;
-import java.util.Calendar;
 
 public class SettingsHomepageActivity extends FragmentActivity {
 
@@ -76,8 +71,6 @@ public class SettingsHomepageActivity extends FragmentActivity {
                 View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
 
         setHomepageContainerPaddingTop();
-	getRandomName();
-	goodVibesPlease();
 
         Context context = getApplicationContext();
 
@@ -175,7 +168,6 @@ public class SettingsHomepageActivity extends FragmentActivity {
     @Override
     public void onResume() {
         super.onResume();
-	goodVibesPlease();
     }
 
     private boolean isHomepageSpacerEnabled() {
@@ -189,43 +181,4 @@ public class SettingsHomepageActivity extends FragmentActivity {
             v.requestLayout();
         }
     }
-
-    private void getRandomName(){
-    Resources res = getResources();
-    String[] array = res.getStringArray(R.array.random_user_names);
-    String randomName = array[new Random().nextInt(array.length)];
-    TextView homepageUsernameTextView=(TextView) findViewById(R.id.userNameTextView);
-    homepageUsernameTextView.setText(randomName);
-    }
-
-    private void goodVibesPlease(){
-
-     Calendar c = Calendar.getInstance();
-     int hours = c.get(Calendar.HOUR_OF_DAY);
-     String greeting=null;
-     TextView homePageGreetingTextView=(TextView) findViewById(R.id.greetingsTextView);
-     View root = findViewById(R.id.settings_homepage_container);
-
-     if(hours>=0 && hours<=11){
-         greeting = "Good Morning!!";
-
-     } else if(hours>=12 && hours<=15){
-
-         greeting = "Good AfterNoon!!";
-
-     } else if(hours>=16 && hours<=20){
-
-         greeting = "Good Evening!!";
-
-     } else if(hours>=21 && hours<=24){
-
-         greeting = "Good Night!!";
-
-     } else {
-         greeting = "Stay Colt-ify";
-     }
-
-     homePageGreetingTextView.setText(greeting);
-
- }
 }
