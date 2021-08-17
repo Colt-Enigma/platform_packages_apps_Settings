@@ -30,7 +30,6 @@
         android:layout_width="wrap_content"
         android:textAppearance="@style/homepage_spacer_title_style"
         android:layout_gravity="left"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
         android:text="@string/settings_label" />
 
