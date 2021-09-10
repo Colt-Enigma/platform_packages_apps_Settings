@@ -17,6 +17,7 @@
 package com.android.settings.display;
 
 import static android.provider.Settings.System.PEAK_REFRESH_RATE;
+import static android.provider.Settings.System.MIN_REFRESH_RATE;
 
 import android.content.Context;
 import android.provider.Settings;
@@ -40,62 +41,8 @@ public class PeakRefreshRatePreferenceController extends BasePreferenceControlle
 
     private ListPreference mListPreference;
 
-<<<<<<< HEAD
-    private static final String TAG = "RefreshRatePrefCtr";
-    private static final float INVALIDATE_REFRESH_RATE = -1f;
-
-    private final Handler mHandler;
-    private final IDeviceConfigChange mOnDeviceConfigChange;
-    private final DeviceConfigDisplaySettings mDeviceConfigDisplaySettings;
-    private Preference mPreference;
-
-    private interface IDeviceConfigChange {
-        void onDefaultRefreshRateChanged();
-    }
-
-    public PeakRefreshRatePreferenceController(Context context, String key) {
-        super(context, key);
-        mHandler = new Handler(context.getMainLooper());
-        mDeviceConfigDisplaySettings = new DeviceConfigDisplaySettings();
-        mOnDeviceConfigChange =
-                new IDeviceConfigChange() {
-                    public void onDefaultRefreshRateChanged() {
-                        updateState(mPreference);
-                    }
-                };
-
-        final DisplayManager dm = mContext.getSystemService(DisplayManager.class);
-        final Display display = dm.getDisplay(Display.DEFAULT_DISPLAY);
-
-        if (display == null) {
-            Log.w(TAG, "No valid default display device");
-            mPeakRefreshRate = DEFAULT_REFRESH_RATE;
-        } else {
-            mPeakRefreshRate = findPeakRefreshRate(display.getSupportedModes());
-        }
-
-        Log.d(
-                TAG,
-                "DEFAULT_REFRESH_RATE : "
-                        + DEFAULT_REFRESH_RATE
-                        + " mPeakRefreshRate : "
-                        + mPeakRefreshRate);
-    }
-
-    @Override
-    public void displayPreference(PreferenceScreen screen) {
-        super.displayPreference(screen);
-
-        mPreference = screen.findPreference(getPreferenceKey());
-
-        String preferenceSummary = mContext.getResources().getString(
-                R.string.peak_refresh_rate_summary);
-        mPreference.setSummary(preferenceSummary.replace("90",
-                Integer.toString(Math.round(getDefaultPeakRefreshRate()))));
-=======
     public PeakRefreshRatePreferenceController(Context context) {
         super(context, KEY_PEAK_REFRESH_RATE);
->>>>>>> d4df182dbc (Settings: Add preference for maximum screen refresh rate)
     }
 
     @Override
@@ -152,6 +99,10 @@ public class PeakRefreshRatePreferenceController extends BasePreferenceControlle
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         Settings.System.putFloat(mContext.getContentResolver(), PEAK_REFRESH_RATE,
                 Float.valueOf((String) newValue));
+        if (!mContext.getResources().getBoolean(R.bool.config_supports_dynamic_refresh_rate_controls)){
+            Settings.System.putFloat(mContext.getContentResolver(), MIN_REFRESH_RATE,
+                    Float.valueOf((String) newValue));
+        }
         updateState(preference);
         return true;
     }
