@@ -35,12 +35,14 @@
 
     <Preference
         android:key="configure_wifi_settings"
+        settings:iconSpaceReserved="false"
         android:title="@string/wifi_configure_settings_preference_title"
         settings:allowDividerAbove="true"
         android:fragment="com.android.settings.wifi.ConfigureWifiSettings"/>
 
     <Preference
         android:key="saved_networks"
+        settings:iconSpaceReserved="false"
         android:title="@string/wifi_saved_access_points_label"
         android:fragment="com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings"/>
 

@@ -29,6 +29,7 @@
 
     <DropDownPreference
         android:key="night_display_auto_mode"
+        settings:iconSpaceReserved="false"
         android:title="@string/night_display_auto_mode_title"
         android:summary="%s"
         settings:controller="com.android.settings.display.NightDisplayAutoModePreferenceController"/>
@@ -45,6 +46,7 @@
 
     <com.android.settings.widget.SeekBarPreference
         android:key="night_display_temperature"
+        settings:iconSpaceReserved="false"
         android:title="@string/night_display_temperature_title"
         settings:keywords="@string/keywords_display_night_display"
         settings:controller="com.android.settings.display.NightDisplayIntensityPreferenceController"

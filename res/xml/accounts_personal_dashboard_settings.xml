@@ -28,6 +28,7 @@
 
     <SwitchPreference
         android:key="auto_sync_account_data"
+        settings:iconSpaceReserved="false"
         android:title="@string/auto_sync_account_title"
         android:summary="@string/auto_sync_account_summary"
         android:order="100"
@@ -35,6 +36,7 @@
 
     <SwitchPreference
         android:key="auto_sync_personal_account_data"
+        settings:iconSpaceReserved="false"
         android:title="@string/account_settings_menu_auto_sync_personal"
         android:summary="@string/auto_sync_account_summary"
         android:order="110"/>

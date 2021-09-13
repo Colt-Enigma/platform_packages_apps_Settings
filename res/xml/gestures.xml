@@ -22,12 +22,14 @@
 
     <Preference
         android:key="gesture_assist_input_summary"
+        settings:iconSpaceReserved="false"
         android:title="@string/assist_gesture_title"
         android:fragment="com.android.settings.gestures.AssistGestureSettings"
         settings:controller="com.android.settings.gestures.AssistGestureSettingsPreferenceController" />
 
     <Preference
         android:key="gesture_swipe_down_fingerprint_input_summary"
+        settings:iconSpaceReserved="false"
         android:title="@string/fingerprint_swipe_for_notifications_title"
         android:fragment="com.android.settings.gestures.SwipeToNotificationSettings"
         settings:searchable="false"
@@ -35,6 +37,7 @@
 
     <Preference
         android:key="gesture_double_tap_power_input_summary"
+        settings:iconSpaceReserved="false"
         android:title="@string/double_tap_power_for_camera_title"
         android:fragment="com.android.settings.gestures.DoubleTapPowerSettings"
         settings:searchable="false"
@@ -42,6 +45,7 @@
 
     <Preference
         android:key="gesture_double_twist_input_summary"
+        settings:iconSpaceReserved="false"
         android:title="@string/double_twist_for_camera_mode_title"
         android:fragment="com.android.settings.gestures.DoubleTwistGestureSettings"
         settings:searchable="false"
@@ -49,6 +53,7 @@
 
     <Preference
         android:key="gesture_system_navigation_input_summary"
+        settings:iconSpaceReserved="false"
         android:title="@string/system_navigation_title"
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
@@ -56,6 +61,7 @@
 
     <Preference
         android:key="gesture_tap_screen_input_summary"
+        settings:iconSpaceReserved="false"
         android:title="@string/ambient_display_tap_screen_title"
         android:fragment="com.android.settings.gestures.TapScreenGestureSettings"
         settings:searchable="false"
@@ -63,6 +69,7 @@
 
     <Preference
         android:key="gesture_double_tap_screen_input_summary"
+        settings:iconSpaceReserved="false"
         android:title="@string/ambient_display_title"
         android:fragment="com.android.settings.gestures.DoubleTapScreenSettings"
         settings:searchable="false"
@@ -70,6 +77,7 @@
 
     <Preference
         android:key="gesture_pick_up_input_summary"
+        settings:iconSpaceReserved="false"
         android:title="@string/ambient_display_pickup_title"
         android:fragment="com.android.settings.gestures.PickupGestureSettings"
         settings:searchable="false"
@@ -77,18 +85,21 @@
 
     <Preference
         android:key="gesture_prevent_ringing_summary"
+        settings:iconSpaceReserved="false"
         android:title="@string/gesture_prevent_ringing_screen_title"
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
         settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController" />
 
     <Preference
         android:key="gesture_power_menu_summary"
+        settings:iconSpaceReserved="false"
         android:title="@string/power_menu_setting_name"
         android:fragment="com.android.settings.gestures.PowerMenuSettings"
         settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
 
     <Preference
         android:key="gesture_adaptive_playback_summary"
+        settings:iconSpaceReserved="false"
         android:title="@string/adaptive_playback_screen_title"
         android:fragment="com.android.settings.gestures.AdaptivePlaybackGestureSettings"
         settings:controller="com.android.settings.gestures.AdaptivePlaybackParentPreferenceController" />

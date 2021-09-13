@@ -80,12 +80,14 @@
 
         <SwitchPreference
             android:key="toggle_large_pointer_icon"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/accessibility_toggle_large_pointer_icon_title"
             settings:controller="com.android.settings.accessibility.LargePointerIconPreferenceController"/>
 
         <SwitchPreference
             android:key="toggle_disable_animations"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/accessibility_disable_animations"
             settings:controller="com.android.settings.accessibility.DisableAnimationsPreferenceController"/>
@@ -94,11 +96,13 @@
 
     <PreferenceCategory
         android:key="interaction_control_category"
+        settings:iconSpaceReserved="false"
         android:persistent="false"
         android:title="@string/interaction_control_category_title">
 
         <Preference
             android:fragment="com.android.settings.accessibility.ToggleAutoclickPreferenceFragment"
+            settings:iconSpaceReserved="false"
             android:key="autoclick_preference"
             android:persistent="false"
             android:title="@string/accessibility_autoclick_preference_title"
@@ -106,12 +110,14 @@
 
         <SwitchPreference
             android:key="toggle_power_button_ends_call_preference"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/accessibility_power_button_ends_call_prerefence_title"
             settings:controller="com.android.settings.accessibility.PowerButtonEndsCallPreferenceController"/>
 
         <SwitchPreference
             android:key="toggle_lock_screen_rotation_preference"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/accelerometer_title"
             settings:controller="com.android.settings.accessibility.LockScreenRotationPreferenceController"/>
@@ -120,6 +126,7 @@
             android:entries="@array/long_press_timeout_selector_titles"
             android:entryValues="@array/long_press_timeout_selector_values"
             android:key="select_long_press_timeout_preference"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/accessibility_long_press_timeout_preference_title"
             settings:controller="com.android.settings.accessibility.SelectLongPressTimeoutPreferenceController"/>
@@ -127,6 +134,7 @@
         <Preference
             android:fragment="com.android.settings.accessibility.AccessibilityControlTimeoutPreferenceFragment"
             android:key="accessibility_control_timeout_preference_fragment"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/accessibility_setting_item_control_timeout_title"
             settings:controller="com.android.settings.accessibility.AccessibilityTimeoutPreferenceController"/>
@@ -134,6 +142,7 @@
         <Preference
             android:fragment="com.android.settings.accessibility.VibrationSettings"
             android:key="vibration_preference_screen"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/accessibility_vibration_settings_title"
             settings:controller="com.android.settings.accessibility.VibrationPreferenceController"/>
@@ -141,6 +150,7 @@
         <Preference
             android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
             android:key="gesture_system_navigation_input_summary_accessibility"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/system_navigation_title"
             settings:searchable="false"
@@ -163,6 +173,7 @@
 
         <SwitchPreference
             android:key="toggle_master_mono"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:summary="@string/accessibility_toggle_master_mono_summary"
             android:title="@string/accessibility_toggle_master_mono_title"
@@ -170,11 +181,13 @@
 
         <com.android.settings.accessibility.BalanceSeekBarPreference
             android:key="seekbar_master_balance"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/accessibility_toggle_master_balance_title"/>
 
         <Preference
             android:key="hearing_aid_preference"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:summary="@string/accessibility_hearingaid_not_connected_summary"
             android:title="@string/accessibility_hearingaid_title"
@@ -182,6 +195,7 @@
 
         <Preference
             android:key="rtt_setting"
+            settings:iconSpaceReserved="false"
             android:summary="@string/summary_placeholder"
             android:title="@string/rtt_settings_title"
             settings:controller="com.android.settings.accessibility.RTTSettingPreferenceController"/>
@@ -189,6 +203,7 @@
         <Preference
             android:fragment="com.android.settings.accessibility.CaptionPropertiesFragment"
             android:key="captioning_preference_screen"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/accessibility_captioning_title"
             settings:controller="com.android.settings.accessibility.CaptioningPreferenceController"/>
@@ -202,6 +217,7 @@
 
         <SwitchPreference
             android:key="toggle_high_text_contrast_preference"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/accessibility_toggle_high_text_contrast_preference_title"
             settings:controller="com.android.settings.accessibility.HighTextContrastPreferenceController"/>
@@ -224,6 +240,7 @@
 
         <SwitchPreference
             android:key="accessibility_shortcut_preference"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:title="@string/accessibility_shortcut_service_on_lock_screen_title"
             android:summary="@string/accessibility_shortcut_description"
