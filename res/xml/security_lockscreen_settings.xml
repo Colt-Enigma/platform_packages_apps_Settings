@@ -24,12 +24,14 @@
         android:title="@string/lockscreen_settings_what_to_show_category">
         <com.android.settings.RestrictedListPreference
             android:key="security_setting_lock_screen_notif"
+            settings:iconSpaceReserved="false"
             android:title="@string/lock_screen_notifications_title"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_lock_screen_notif"/>
 
         <SwitchPreference
             android:key="security_dispaly_lockscreen_bypass"
+            settings:iconSpaceReserved="false"
             android:title="@string/lockscreen_bypass_title"
             android:summary="@string/lockscreen_bypass_summary"
             settings:searchable="false"
@@ -37,16 +39,19 @@
 
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="security_lockscreen_add_users_when_locked"
+            settings:iconSpaceReserved="false"
             android:title="@string/user_add_on_lockscreen_menu"
             settings:controller="com.android.settings.users.AddUserWhenLockedPreferenceController" />
 
         <com.android.settingslib.RestrictedPreference
             android:key="owner_info_settings"
+            settings:iconSpaceReserved="false"
             android:title="@string/owner_info_settings_title"
             android:summary="@string/owner_info_settings_summary" />
 
         <!--SwitchPreference
             android:key="security_setting_lockdown_enabled"
+            settings:iconSpaceReserved="false"
             android:title="@string/lockdown_settings_title"
             android:summary="@string/lockdown_settings_summary"
             settings:controller="com.android.settings.security.LockdownButtonPreferenceController" /> -->
@@ -61,6 +66,7 @@
 
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="ambient_display_always_on"
+            settings:iconSpaceReserved="false"
             android:title="@string/doze_always_on_title"
             android:summary="@string/doze_always_on_summary"
             settings:controller="com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController"
@@ -68,6 +74,7 @@
 
         <Preference
             android:key="ambient_display_tap"
+            settings:iconSpaceReserved="false"
             android:title="@string/ambient_display_tap_screen_title"
             android:fragment="com.android.settings.gestures.TapScreenGestureSettings"
             settings:searchable="false"
@@ -75,6 +82,7 @@
 
         <Preference
             android:key="ambient_display_double_tap"
+            settings:iconSpaceReserved="false"
             android:title="@string/ambient_display_title"
             android:fragment="com.android.settings.gestures.DoubleTapScreenSettings"
             settings:searchable="false"
@@ -82,6 +90,7 @@
 
         <Preference
             android:key="ambient_display_pick_up"
+            settings:iconSpaceReserved="false"
             android:title="@string/ambient_display_pickup_title"
             android:fragment="com.android.settings.gestures.PickupGestureSettings"
             settings:searchable="false"
@@ -89,6 +98,7 @@
 
         <SwitchPreference
             android:key="ambient_display_notification"
+            settings:iconSpaceReserved="false"
             android:title="@string/doze_title"
             android:summary="@string/doze_summary"
             settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />

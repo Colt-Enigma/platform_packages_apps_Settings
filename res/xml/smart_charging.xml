@@ -23,6 +23,7 @@
 
     <com.colt.enigma.preference.CustomSeekBarPreference
         android:key="smart_charging_level"
+        settings:iconSpaceReserved="false"
         android:title="@string/smart_charging_level_title"
         android:max="100"
         settings:min="65"
@@ -31,6 +32,7 @@
 
     <com.colt.enigma.preference.CustomSeekBarPreference
         android:key="smart_charging_resume_level"
+        settings:iconSpaceReserved="false"
         android:title="@string/smart_charging_resume_level_title"
         android:max="99"
         settings:min="15"
@@ -39,6 +41,7 @@
 
     <com.colt.enigma.preference.SystemSettingSwitchPreference
         android:key="smart_charging_reset_stats"
+        settings:iconSpaceReserved="false"
         android:title="@string/smart_charging_reset_stats_title"
         android:summary="@string/smart_charging_reset_stats_summary"
         android:defaultValue="false" />

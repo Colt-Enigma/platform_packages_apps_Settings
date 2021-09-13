@@ -31,11 +31,13 @@
         android:title="@string/keyboard_and_input_methods_category">
         <Preference
             android:key="virtual_keyboard_pref"
+            settings:iconSpaceReserved="false"
             android:title="@string/virtual_keyboard_category"
             android:fragment="com.android.settings.inputmethod.VirtualKeyboardFragment"
             settings:keywords="@string/keywords_virtual_keyboard"/>
         <Preference
             android:key="physical_keyboard_pref"
+            settings:iconSpaceReserved="false"
             android:title="@string/physical_keyboard_title"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.inputmethod.PhysicalKeyboardFragment"/>
@@ -49,12 +51,14 @@
              See: InputMethodAndSubtypeUtil.removeUnnecessaryNonPersistentPreference. -->
         <Preference
             android:key="spellcheckers_settings"
+            settings:iconSpaceReserved="false"
             android:title="@string/spellcheckers_settings_title"
             android:persistent="false"
             android:fragment="com.android.settings.inputmethod.SpellCheckersSettings" />
 
         <Preference
             android:key="default_autofill"
+            settings:iconSpaceReserved="false"
             android:title="@string/autofill_app"
             android:fragment="com.android.settings.applications.defaultapps.AutofillPicker"
             settings:keywords="@string/autofill_keywords" />
@@ -62,6 +66,7 @@
         <!-- User dictionary preference title and fragment will be set programmatically. -->
         <Preference
             android:key="key_user_dictionary_settings"
+            settings:iconSpaceReserved="false"
             android:title="@string/user_dict_settings_title"
             android:fragment="com.android.settings.inputmethod.UserDictionaryList"
             settings:controller="com.android.settings.language.UserDictionaryPreferenceController" />
@@ -73,11 +78,13 @@
 
         <com.android.settings.PointerSpeedPreference
             android:key="pointer_speed"
+            settings:iconSpaceReserved="false"
             android:title="@string/pointer_speed"
             android:dialogTitle="@string/pointer_speed" />
 
         <Preference
             android:key="tts_settings_summary"
+            settings:iconSpaceReserved="false"
             android:title="@string/tts_settings_title"
             android:fragment="com.android.settings.tts.TextToSpeechSettings"
             settings:searchable="false"/>
@@ -86,6 +93,7 @@
 
     <SwitchPreference
         android:key="vibrate_input_devices"
+        settings:iconSpaceReserved="false"
         android:title="@string/vibrate_input_devices"
         android:summary="@string/vibrate_input_devices_summary"
         settings:controller="com.android.settings.inputmethod.GameControllerPreferenceController" />

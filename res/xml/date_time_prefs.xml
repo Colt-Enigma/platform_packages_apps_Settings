@@ -22,30 +22,35 @@
 
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="auto_time"
+        settings:iconSpaceReserved="false"
         android:title="@string/date_time_auto"
         settings:useAdditionalSummary="true"
         settings:userRestriction="no_config_date_time"/>
 
     <com.android.settingslib.RestrictedPreference
         android:key="date"
+        settings:iconSpaceReserved="false"
         android:title="@string/date_time_set_date_title"
         android:summary="@string/summary_placeholder"
         settings:userRestriction="no_config_date_time"/>
 
     <com.android.settingslib.RestrictedPreference
         android:key="time"
+        settings:iconSpaceReserved="false"
         android:title="@string/date_time_set_time_title"
         android:summary="@string/summary_placeholder"
         settings:userRestriction="no_config_date_time"/>
 
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="auto_zone"
+        settings:iconSpaceReserved="false"
         android:title="@string/zone_auto_title"
         settings:allowDividerAbove="true"
         settings:userRestriction="no_config_date_time"/>
 
     <com.android.settingslib.RestrictedPreference
         android:key="timezone"
+        settings:iconSpaceReserved="false"
         android:title="@string/date_time_set_timezone_title"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.datetime.timezone.TimeZoneSettings"
@@ -58,10 +63,12 @@
         settings:keywords="@string/keywords_time_format">
         <SwitchPreference
             android:key="auto_24hour"
+            settings:iconSpaceReserved="false"
             android:title="@string/date_time_24hour_auto"/>
 
         <SwitchPreference
             android:key="24 hour"
+            settings:iconSpaceReserved="false"
             android:title="@string/date_time_24hour" />
     </PreferenceCategory>
 

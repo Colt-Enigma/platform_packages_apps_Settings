@@ -20,6 +20,7 @@
 
     <SwitchPreference
         android:key="accelerometer"
+        settings:iconSpaceReserved="false"
         android:title="@string/accelerometer_title" />
 
     <PreferenceCategory
@@ -28,24 +29,28 @@
 
         <SwitchPreference
             android:key="display_rotation_0"
+            settings:iconSpaceReserved="false"
             android:title="@string/display_rotation_0_title"
             android:layout="?android:attr/preferenceLayoutChild"
             android:dependency="accelerometer" />
 
         <SwitchPreference
             android:key="display_rotation_90"
+            settings:iconSpaceReserved="false"
             android:title="@string/display_rotation_90_title"
             android:layout="?android:attr/preferenceLayoutChild"
             android:dependency="accelerometer" />
 
         <SwitchPreference
             android:key="display_rotation_180"
+            settings:iconSpaceReserved="false"
             android:title="@string/display_rotation_180_title"
             android:layout="?android:attr/preferenceLayoutChild"
             android:dependency="accelerometer" />
 
         <SwitchPreference
             android:key="display_rotation_270"
+            settings:iconSpaceReserved="false"
             android:title="@string/display_rotation_270_title"
             android:layout="?android:attr/preferenceLayoutChild"
             android:dependency="accelerometer" />

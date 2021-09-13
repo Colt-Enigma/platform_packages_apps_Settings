@@ -35,18 +35,21 @@
         <!-- People -->
         <Preference
             android:key="zen_mode_behavior_people"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_category_people"
             android:fragment="com.android.settings.notification.zen.ZenModePeopleSettings" />
 
         <!-- Apps -->
         <Preference
             android:key="zen_mode_behavior_apps"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_category_apps"
             android:fragment="com.android.settings.notification.zen.ZenModeBypassingAppsSettings" />
 
         <!-- All sounds -->
         <Preference
             android:key="zen_sound_vibration_settings"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_category_exceptions"
             android:fragment="com.android.settings.notification.zen.ZenModeSoundVibrationSettings" />
     </PreferenceCategory>
@@ -54,6 +57,7 @@
     <!-- Automatic rules -->
     <Preference
         android:key="zen_mode_automation_settings"
+        settings:iconSpaceReserved="false"
         android:title="@string/zen_category_schedule"
         settings:allowDividerAbove="true"
         android:fragment="com.android.settings.notification.zen.ZenModeAutomationSettings"/>
@@ -64,12 +68,14 @@
         <!-- DND duration settings -->
         <com.android.settings.notification.zen.ZenDurationDialogPreference
             android:key="zen_mode_duration_settings"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_category_duration"
             android:widgetLayout="@null"/>
 
         <!-- What to block (effects) -->
         <Preference
             android:key="zen_mode_block_effects_settings"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_restrict_notifications_title"
             android:fragment="com.android.settings.notification.zen.ZenModeRestrictNotificationsSettings" />
     </PreferenceCategory>

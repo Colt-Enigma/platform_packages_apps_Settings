@@ -21,6 +21,7 @@
 
     <Preference
         android:key="bt_pair_rename_devices"
+        settings:iconSpaceReserved="false"
         android:title="@string/bluetooth_device_name"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.bluetooth.BluetoothDeviceRenamePreferenceController"/>

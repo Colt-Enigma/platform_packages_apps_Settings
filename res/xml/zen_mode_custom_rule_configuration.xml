@@ -26,40 +26,47 @@
         <!-- Calls -->
         <Preference
             android:key="zen_rule_calls_settings"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_calls" />
 
         <!-- Messages -->
         <Preference
             android:key="zen_rule_messages_settings"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_messages" />
 
         <!-- Alarms -->
         <SwitchPreference
             android:key="zen_rule_alarms"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_alarms"
             android:summary="@string/zen_mode_alarms_summary"/>
 
         <!-- Media -->
         <SwitchPreference
             android:key="zen_rule_media"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_media"
             android:summary="@string/zen_mode_media_summary"/>
 
         <!-- System -->
         <SwitchPreference
             android:key="zen_rule_system"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_system"
             android:summary="@string/zen_mode_system_summary"/>
 
         <!-- Reminders -->
         <SwitchPreference
             android:key="zen_rule_reminders"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_reminders"
             android:summary="@string/zen_mode_reminders_summary"/>
 
         <!-- Events -->
         <SwitchPreference
             android:key="zen_rule_events"
+            settings:iconSpaceReserved="false"
             android:title="@string/zen_mode_events"
             android:summary="@string/zen_mode_events_summary"/>
     </PreferenceCategory>
