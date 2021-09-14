@@ -1,6 +1,5 @@
 /*
  * Copyright (C) 2019 The Android Open Source Project
- * Copyright (C) 2021 ShapeShiftOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,8 +21,6 @@ import android.content.res.Configuration;
 import android.os.PowerManager;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
@@ -44,8 +41,8 @@ public class DarkModeActivationPreferenceController extends BasePreferenceContro
     private final UiModeManager mUiModeManager;
     private final MetricsFeatureProvider mMetricsFeatureProvider;
     private PowerManager mPowerManager;
-    private TextView mDisplayText;
-    private ImageButton mTurnOnButton;
+    private Button mTurnOffButton;
+    private Button mTurnOnButton;
     private TimeFormatter mFormat;
     private LayoutPreference mPreference;
 
@@ -68,9 +65,8 @@ public class DarkModeActivationPreferenceController extends BasePreferenceContro
 
         final boolean batterySaver = mPowerManager.isPowerSaveMode();
         if (batterySaver) {
-            mTurnOnButton.setEnabled(false);
-            mTurnOnButton.setClickable(false);
-            mDisplayText.setText(R.string.battery_saver_is_enabled);
+            mTurnOnButton.setVisibility(View.GONE);
+            mTurnOffButton.setVisibility(View.GONE);
             return;
         }
 
@@ -100,9 +96,15 @@ public class DarkModeActivationPreferenceController extends BasePreferenceContro
                     ? R.string.dark_ui_activation_off_manual
                     : R.string.dark_ui_activation_on_manual);
         }
-
-        mTurnOnButton.setVisibility(View.VISIBLE);
-        mDisplayText.setText(buttonText);
+        if (active) {
+            mTurnOnButton.setVisibility(View.GONE);
+            mTurnOffButton.setVisibility(View.VISIBLE);
+            mTurnOffButton.setText(buttonText);
+        } else {
+            mTurnOnButton.setVisibility(View.VISIBLE);
+            mTurnOffButton.setVisibility(View.GONE);
+            mTurnOnButton.setText(buttonText);
+        }
     }
 
     @Override
@@ -146,9 +148,10 @@ public class DarkModeActivationPreferenceController extends BasePreferenceContro
         super.displayPreference(screen);
 
         mPreference = screen.findPreference(getPreferenceKey());
-        mTurnOnButton = mPreference.findViewById(R.id.button_x);
+        mTurnOnButton = mPreference.findViewById(R.id.dark_ui_turn_on_button);
         mTurnOnButton.setOnClickListener(mListener);
-        mDisplayText = mPreference.findViewById(R.id.button_x_text);
+        mTurnOffButton = mPreference.findViewById(R.id.dark_ui_turn_off_button);
+        mTurnOffButton.setOnClickListener(mListener);
     }
 
     @Override

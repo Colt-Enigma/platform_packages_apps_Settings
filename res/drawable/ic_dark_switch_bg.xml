@@ -4,6 +4,6 @@
         android:radius="100dp">
     </corners>
     <solid
-        android:color="@color/nav_bg_accent">
+        android:color="#33FFC700">
     </solid>
 </shape>
