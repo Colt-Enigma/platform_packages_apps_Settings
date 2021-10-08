@@ -53,6 +53,7 @@
 
     <PreferenceScreen
         android:key="wifi_tether_client_list"
+        settings:iconSpaceReserved="false"
         android:title="@string/wifi_tether_client_list_title"
         android:summary="@string/wifi_tether_client_list_summary">
         <intent android:action="android.intent.action.MAIN"
