@@ -15,6 +15,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!--ColtOS-->
+    <string name="colt_title" translatable="false">ColtOS</string>
+
+    <!-- About phone screen, ColtOS version -->
+    <string name="colt_version">Colt version</string>
+    <string name="colt_version_default">Unknown</string>
+    <string name="keywords_colt_version">colt version</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">build date, build info</string>
+
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Tap to show info</string>
 
@@ -78,4 +91,5 @@
     <!-- Navigation bar hint -->
     <string name="show_navbar_gesture_bar_title">Gesture bar</string>
     <string name="show_navbar_gesture_bar_summary">Show gesture bar at the bottom of the screen</string>
+
 </resources>
