@@ -43,6 +43,7 @@ public class ColtVersionDetailPreferenceController extends BasePreferenceControl
 
     private static final String KEY_COLT_VERSION_PROP = "ro.modversion";
     private static final String KEY_COLT_RELEASETYPE_PROP = "ro.colt.releasetype";
+    private static final String KEY_COLT_ZIPTYPE_PROP = "ro.colt.ziptype";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];
@@ -65,8 +66,10 @@ public class ColtVersionDetailPreferenceController extends BasePreferenceControl
     public CharSequence getSummary() {
 	String[] coltVer = SystemProperties.get(KEY_COLT_VERSION_PROP).split("v");
 	String coltReleasetype =  SystemProperties.get(KEY_COLT_RELEASETYPE_PROP);
-	if (!coltVer[1].isEmpty() && !coltReleasetype.isEmpty())
-	    return coltVer[1] + " | " + coltReleasetype;
+	String coltZiptype =  SystemProperties.get(KEY_COLT_ZIPTYPE_PROP);
+
+	if (!coltVer[1].isEmpty() && !coltReleasetype.isEmpty() && !coltZiptype.isEmpty())
+	    return coltVer[1] + " | " + coltZiptype + " | " + coltReleasetype;
 	else
             return mContext.getString(R.string.unknown);
     }
