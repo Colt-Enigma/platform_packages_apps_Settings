@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources> 
+    <!-- Rounded corner theme radius -->
+    <dimen name="rounded_corner_theme_overlay_radius">24dp</dimen>
+</resources>
