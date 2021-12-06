@@ -26,8 +26,11 @@
         android:key="changelog"
         android:order="7"
         android:title="@string/changelog_title"
-        android:summary="@string/changelog_summary"
-        android:fragment="com.android.settings.colt.Changelog" />
+        android:summary="@string/changelog_summary">
+        <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="com.android.settings"
+             android:targetClass="com.android.settings.colt.ChangelogActivity" />
+    </Preference>
 
     <PreferenceCategory
         android:key="basic_info_category"
