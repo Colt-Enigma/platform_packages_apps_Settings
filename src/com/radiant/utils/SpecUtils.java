@@ -45,7 +45,7 @@ public class SpecUtils {
     private static final String FLUID_CPU_MODEL_PROPERTY = "ro.device.cpu";
     private static final String FALLBACK_CPU_MODEL_PROPERTY = "ro.board.model";
     private static final String POWER_PROFILE_CLASS = "com.android.internal.os.PowerProfile";
-    static String aproxStorage;
+    public static String aproxStorage;
 
     public static String getTotalInternalMemorySize() {
         File path = Environment.getDataDirectory();
