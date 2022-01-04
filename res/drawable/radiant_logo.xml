@@ -8,12 +8,12 @@
     <path
         android:name="path"
         android:pathData="M 0.402 1.89 L 138.769 237.997 L 274.061 0.115 L 0.402 1.89 Z M 41.257 25.125 L 138.464 190.998 L 233.511 23.879 L 41.257 25.125 Z"
-        android:fillColor="#FFFFFF"
+        android:fillColor="@color/textCol"
         android:strokeWidth="1"
         android:fillType="evenOdd"/>
     <path
         android:name="path_1"
         android:pathData="M 138 150 L 77.378 45 L 198.622 45 L 138 150 Z"
-        android:fillColor="#FFFFFF"
+        android:fillColor="@color/textCol"
         android:strokeWidth="1"/>
 </vector>

@@ -47,6 +47,7 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.LayoutPreference;
+import com.radiant.info.InfoPrefsController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -107,6 +108,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
         controllers.add(new FeedbackPreferenceController(fragment, context));
         controllers.add(new FccEquipmentIdPreferenceController(context));
         controllers.add(new UptimePreferenceController(context, lifecycle));
+        controllers.add(new InfoPrefsController(context));
         return controllers;
     }
 

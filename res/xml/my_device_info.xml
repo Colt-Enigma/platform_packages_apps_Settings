@@ -67,6 +67,39 @@
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"
         settings:layout="@layout/rdnt_card_bot_abt" />
 
+    <!-- Specs category -->
+    <Preference
+        android:key="chipset"
+        settings:layout="@layout/rdnt_card_top_abt"
+        android:title="@string/chipset"
+        android:icon="@drawable/chipsetab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+
+    <Preference
+        android:key="storage"
+        settings:layout="@layout/rdnt_card_mid_abt"
+        android:title="@string/storage"
+        android:icon="@drawable/storageab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+
+    <Preference
+        android:key="battery"
+        settings:layout="@layout/rdnt_card_mid_abt"
+        android:title="@string/battery"
+        android:icon="@drawable/batteryab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+
+    <Preference
+        android:key="display"
+        settings:layout="@layout/rdnt_card_bot_abt"
+        android:title="@string/display"
+        android:icon="@drawable/displayab"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+
     <!-- Bottom category -->
     <!-- Device up time -->
     <Preference
