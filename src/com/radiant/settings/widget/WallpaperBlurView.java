@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.radiant.widget;
+package com.radiant.settings.widget;
 
 import android.app.WallpaperManager;
 import android.content.Context;

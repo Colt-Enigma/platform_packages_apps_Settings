@@ -47,7 +47,7 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.LayoutPreference;
-import com.radiant.info.InfoPrefsController;
+import com.radiant.settings.info.InfoPrefsController;
 
 import java.util.ArrayList;
 import java.util.List;

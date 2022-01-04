@@ -12,12 +12,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.radiant.info;
+package com.radiant.settings.info;
 
 import android.content.Context;
 import android.os.SystemProperties;
 import android.text.TextUtils;
-import com.radiant.utils.SpecUtils;
+import com.radiant.settings.utils.SpecUtils;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
