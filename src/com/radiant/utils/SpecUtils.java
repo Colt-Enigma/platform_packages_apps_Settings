@@ -43,7 +43,7 @@ import com.android.settings.R;
 public class SpecUtils {
     private static final String DEVICE_NAME_MODEL_PROPERTY = "ro.product.system.model";
     private static final String FLUID_CPU_MODEL_PROPERTY = "ro.device.cpu";
-    private static final String FALLBACK_CPU_MODEL_PROPERTY = "ro.board.model";
+    private static final String FALLBACK_CPU_MODEL_PROPERTY = "ro.board.platform";
     private static final String POWER_PROFILE_CLASS = "com.android.internal.os.PowerProfile";
     public static String aproxStorage;
 
