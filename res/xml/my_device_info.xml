@@ -111,28 +111,21 @@
         settings:layout="@layout/rdnt_card_top_abt" />
 
 
-    <!-- Legal information -->
-    <Preference
-        android:fragment="com.android.settings.LegalSettings"
-        android:icon="@drawable/ic_doc"
-        android:key="legal_container"
-        android:summary="@string/legal_summary"
-        android:title="@string/legal_information"
-        settings:layout="@layout/rdnt_card_bot_abt" />
-
-    <!-- Prefs below are usually hidden -->
     <!-- Regulatory labels -->
     <Preference
         android:key="regulatory_info"
-        settings:layout="@layout/rdnt_card_top_abt"
+        settings:layout="@layout/rdnt_card_mid_abt"
+        android:icon="@drawable/reguinfo"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
     </Preference>
 
+    <!-- Prefs below are usually hidden -->
     <!-- Safety & regulatory manual -->
     <Preference
         android:key="safety_info"
         settings:layout="@layout/rdnt_card_mid_abt"
+        android:icon="@drawable/safetyinfo"
         android:title="@string/safety_and_regulatory_info">
         <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO" />
     </Preference>
@@ -141,6 +134,7 @@
     <Preference
         android:key="manual"
         settings:layout="@layout/rdnt_card_mid_abt"
+        android:icon="@drawable/manualic"
         android:title="@string/manual">
         <intent android:action="android.settings.SHOW_MANUAL" />
     </Preference>
@@ -149,14 +143,25 @@
     <Preference
         android:key="device_feedback"
         android:title="@string/device_feedback"
+        android:icon="@drawable/feedbackic"
         settings:layout="@layout/rdnt_card_mid_abt"
         settings:keywords="@string/keywords_device_feedback" />
 
     <!-- Device FCC equipment id -->
     <Preference
         android:key="fcc_equipment_id"
-        settings:layout="@layout/rdnt_card_bot_abt"
+        android:icon="@drawable/eqic"
+        settings:layout="@layout/rdnt_card_mid_abt"
         android:summary="@string/summary_placeholder"
         android:title="@string/fcc_equipment_id" />
+
+    <!-- Legal information -->
+    <Preference
+        android:fragment="com.android.settings.LegalSettings"
+        android:icon="@drawable/ic_doc"
+        android:key="legal_container"
+        android:summary="@string/legal_summary"
+        android:title="@string/legal_information"
+        settings:layout="@layout/rdnt_card_bot_abt" />
 
 </PreferenceScreen>
