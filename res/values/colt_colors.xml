@@ -38,4 +38,7 @@
     <string name="storage">Storage</string>
     <string name="chipset">Chipset</string>
 
+     <!-- Home -->
+     <string name="wellbeing">Digital Wellbeing</string>
+
 </resources>
