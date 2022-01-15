@@ -101,7 +101,8 @@
         settings:layout="@layout/rdnt_card_mid"
         android:key="ftop_level_wallpapers"
         android:order="-79"
-        android:title="@string/wallpaper_settings_title"/>
+        android:title="@string/wallpaper_settings_title"
+        settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
 
     <Preference
         android:icon="@drawable/ic_homepage_personalizations"
