@@ -17,9 +17,18 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="accessibility_settings_screen"
     android:persistent="false"
     android:title="@string/accessibility_settings">
+
+       <com.android.settingslib.widget.TopIntroPreference
+            android:key="accessibility_illustration_desc"
+            android:title="@string/accessibility_illustration_description"/>
+            
+        <com.android.settingslib.widget.IllustrationPreference
+            android:key="accessibility_illustration"
+            app:lottie_rawRes="@raw/accessibility"/>
 
     <PreferenceCategory
         android:key="user_installed_services_category"

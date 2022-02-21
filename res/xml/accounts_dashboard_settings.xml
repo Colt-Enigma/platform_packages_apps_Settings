@@ -17,10 +17,21 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="user_and_account_settings_screen"
     android:title="@string/account_dashboard_title"
     settings:keywords="@string/keywords_accounts">
 
+       <com.android.settingslib.widget.TopIntroPreference
+            android:key="account_illustration_desc"
+            android:order="-999"
+            android:title="@string/account_illustration_description"/>
+            
+        <com.android.settingslib.widget.IllustrationPreference
+            android:key="account_illustration"
+            android:order="-998"
+            app:lottie_rawRes="@raw/account"/>
+            
     <PreferenceCategory
         android:key="passwords_category"
         android:order="10"

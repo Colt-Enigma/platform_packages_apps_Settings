@@ -17,9 +17,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="system_dashboard_screen"
     android:title="@string/header_category_system">
-
+            
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="system_illustration_desc"
+            android:order="-999"
+            android:title="@string/system_illustration_description"/>
+            
+        <com.android.settingslib.widget.IllustrationPreference
+            android:key="system_illustration"
+            android:order="-998"
+            app:lottie_rawRes="@raw/sound"/>
+            
     <Preference
         android:key="language_input_settings"
         android:title="@string/language_settings"

@@ -17,9 +17,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="network_and_internet_screen"
     android:title="@string/network_dashboard_title">
 
+       <com.android.settingslib.widget.TopIntroPreference
+            android:key="wifi_illustration_desc"
+            android:order="-999"
+            android:title="@string/wifi_illustration_description"/>
+            
+        <com.android.settingslib.widget.IllustrationPreference
+            android:key="wifi_illustration"
+            android:order="-998"
+            app:lottie_rawRes="@raw/wifi"/>
+            
     <PreferenceCategory
         android:key="multi_network_header"
         android:title="@string/summary_placeholder"

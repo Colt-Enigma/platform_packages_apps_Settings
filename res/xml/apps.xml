@@ -18,9 +18,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="apps_screen"
     android:title="@string/apps_dashboard_title">
 
+       <com.android.settingslib.widget.TopIntroPreference
+            android:key="apps_illustration_desc"
+            android:order="-1010"
+            android:title="@string/apps_illustration_description"/>
+            
+        <com.android.settingslib.widget.IllustrationPreference
+            android:key="apps_illustration"
+            android:order="-1000"
+            app:lottie_rawRes="@raw/application"/>
+            
     <Preference
         android:key="all_app_infos"
         android:title="@string/all_apps"
