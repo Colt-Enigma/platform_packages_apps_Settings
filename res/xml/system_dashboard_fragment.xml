@@ -29,7 +29,7 @@
         <com.android.settingslib.widget.IllustrationPreference
             android:key="system_illustration"
             android:order="-998"
-            app:lottie_rawRes="@raw/sound"/>
+            app:lottie_rawRes="@raw/system"/>
             
     <Preference
         android:key="language_input_settings"
