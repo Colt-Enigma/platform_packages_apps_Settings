@@ -20,4 +20,8 @@
     <color name="everest_accent_ripple">@android:color/system_accent1_500</color>
     <color name="abt_crd">@android:color/system_neutral1_0</color>
 
+    <!-- xdUI Base Layout -->
+    <color name="homepage_blaze_background">#536dfe</color>
+    <color name="xd_background1">@android:color/system_neutral1_50</color>
+    
 </resources>
