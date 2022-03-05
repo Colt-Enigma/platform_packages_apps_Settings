@@ -42,4 +42,5 @@
      <string name="wellbeing">Digital Wellbeing</string>
      <string name="ds_ia">yourkeyhere</string>
 
+     <color name="xd_background1">@android:color/system_neutral1_0</color>
 </resources>
