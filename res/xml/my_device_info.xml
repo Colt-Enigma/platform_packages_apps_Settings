@@ -19,10 +19,11 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
-    <androidx.preference.ListPreference
-        settings:layout="@layout/rdnt_tp_view"
+    <!-- Colt logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="colt_logo"
+        android:layout="@layout/colt_logo"
         android:selectable="false"/>
-
 
     <!-- Top category -->
     <!-- Device name -->

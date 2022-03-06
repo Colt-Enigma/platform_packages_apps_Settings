@@ -18,7 +18,7 @@
     android:layout_marginHorizontal="16dp"
     android:layout_marginVertical="16dp"
     app:cardCornerRadius="@dimen/rdnt_card_radius"
-    app:cardElevation="0dp">
+    app:cardElevation="5dp">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -37,26 +37,6 @@
             android:layout_height="match_parent"
             android:alpha="0.12"
             android:src="@drawable/scrim"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingVertical="70dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/radiant_logo" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/radiant_text" />
-
-        </LinearLayout>
 
     </FrameLayout>
 
