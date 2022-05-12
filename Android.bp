@@ -60,6 +60,7 @@ android_library {
     aaptflags: ["--extra-packages com.colt.settings"],
 
     resource_dirs: ["res",
+		    "res-ui",
                     "ColtEnigma/res"
     ],
 
