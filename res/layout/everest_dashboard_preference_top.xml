@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018-2023 The SuperiorOS Project
+<!--
+     Copyright 2021 xdroid, xyzprjkt
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,13 +14,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/everestDashboardPreferenceTop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-     <!-- Fingerprint -->
-     <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
+    <include
+        layout="@layout/everest_dashboard_pref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-     <dimen name="everest_radius">28dp</dimen>
-     <dimen name="everest_radius_merge">5dp</dimen>
-     <dimen name="everest_pref_horizontal_padding">16dp</dimen>
-     <dimen name="everest_pref_horizontal_padding-negative">-16dp</dimen>
-</resources>
+</FrameLayout>

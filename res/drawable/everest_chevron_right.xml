@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018-2023 The SuperiorOS Project
+<!--
+     Copyright 2021 xdroid, xyzprjkt
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,13 +14,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
 
-     <!-- Fingerprint -->
-     <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
-
-     <dimen name="everest_radius">28dp</dimen>
-     <dimen name="everest_radius_merge">5dp</dimen>
-     <dimen name="everest_pref_horizontal_padding">16dp</dimen>
-     <dimen name="everest_pref_horizontal_padding-negative">-16dp</dimen>
-</resources>
+    <path
+        android:pathData="M0 0h24v24H0V0z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M9.31 6.71c-0.39 0.39 -0.39 1.02 0 1.41L13.19 12l-3.88 3.88c-0.39 0.39 -0.39 1.02 0 1.41 0.39 0.39 1.02 0.39 1.41 0l4.59-4.59c0.39-0.39 0.39 -1.02 0-1.41L10.72 6.7c-0.38-0.38-1.02-0.38-1.41 0.01 z" />
+</vector>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 The EverestOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Text Styles -->
+    <style name="everestTextPrimary">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+    </style>
+
+    <style name="everestTextPrimaryMedium" parent="everestTextPrimary">
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+    </style>
+
+    <style name="everestTextSecondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Dashboard -->
+    <style name="everestDashboardPreferenceSingle" parent="everestPreferenceSingle">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    
+    <style name="everestDashboardPreferenceTop" parent="everestPreferenceTop">
+        <item name="android:layout_marginTop">@dimen/everest_pref_horizontal_padding</item>
+    </style>
+
+    <style name="everestDashboardPreferenceBottom" parent="everestPreferenceBottom">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="everestDashboardPreferenceFull" parent="everestPreferenceFull">
+        <item name="android:layout_marginTop">@dimen/everest_pref_horizontal_padding</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="everestDashboardPreferenceFullAccent" parent="everestDashboardPreferenceFull">
+        <item name="android:background">@drawable/everest_preference_background_full_accent</item>
+    </style>
+
+    <style name="everestDashboardPreferencePhone" parent="everestDashboardPreferenceTop">
+        <item name="android:background">@drawable/everest_preference_background_phone</item>
+    </style>
+
+    <!-- General -->
+    <style name="everestPreferenceSingle" parent="everestPreferenceBase">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/everest_preference_background_single</item>
+    </style>
+    
+    <style name="everestPreferenceBase">
+        <item name="android:layout_marginStart">@dimen/everest_pref_horizontal_padding</item>
+        <item name="android:layout_marginEnd">@dimen/everest_pref_horizontal_padding</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="everestPreferenceTop" parent="everestPreferenceBase">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@drawable/everest_preference_background_top</item>
+    </style>
+
+    <style name="everestPreferenceMiddle" parent="everestPreferenceBase">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:background">@drawable/everest_preference_background_middle</item>
+    </style>
+
+    <style name="everestPreferenceBottom" parent="everestPreferenceBase">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/everest_preference_background_bottom</item>
+    </style>
+
+    <style name="everestPreferenceFull" parent="everestPreferenceBase">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/everest_preference_background_full</item>
+    </style>
+
+    <style name="everestPreferenceFullAccent" parent="everestPreferenceBase">
+        <item name="android:layout_marginTop">@dimen/everest_pref_horizontal_padding</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/everest_preference_background_full_accent</item>
+    </style>
+</resources>
