@@ -246,4 +246,8 @@
     <string name="aosp_gesture_preference">System Gestures</string>
     <string name="aosp_gesture_summary">Stock gestures included with AOSP</string>
     <string name="system_navigation_summary">Configure navigation menus</string>
+
+       <!-- Game Space -->
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
 </resources>
