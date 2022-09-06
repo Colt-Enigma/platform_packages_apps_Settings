@@ -183,6 +183,8 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.colt.enigma.ColtEnigma;
 import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
 
+import com.google.android.settings.security.SecurityHubDashboard;
+
 public class SettingsGateway {
 
     /**
@@ -352,7 +354,8 @@ public class SettingsGateway {
             TurnScreenOnDetails.class.getName(),
             ColtEnigma.class.getName(),
             RunningServices.class.getName(),
-            WifiTetherClientManager.class.getName()
+            WifiTetherClientManager.class.getName(),
+            SecurityHubDashboard.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
