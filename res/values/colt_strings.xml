@@ -501,4 +501,9 @@
 
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
+
+    <!-- Black theme -->
+    <string name="system_black_theme_title">Use Black theme</string>
+    <string name="system_black_theme_summary">Force black background colors</string>
+
 </resources>
