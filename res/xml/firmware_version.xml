@@ -60,7 +60,6 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-
     <!-- Security patch -->
     <Preference
         android:key="security_key"
