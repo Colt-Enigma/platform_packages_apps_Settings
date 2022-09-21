@@ -331,4 +331,7 @@
     <string name="gesture_navbar_radius_title">Pill radius</string>
     <string name="thin_label">Thin</string>
     <string name="thick_label">Thick</string>
+
+    <string name="app_info_install_time">Installed: %1$s</string>
+    <string name="app_info_update_time">Updated: %1$s</string>
 </resources>
