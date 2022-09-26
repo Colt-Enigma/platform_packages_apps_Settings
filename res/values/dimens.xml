@@ -534,4 +534,9 @@
     
     <dimen name="default_margin">16dp</dimen>
     <dimen name="default_padding">16dp</dimen>
+
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="color_picker_preview_height">80dp</dimen>
+
 </resources>
