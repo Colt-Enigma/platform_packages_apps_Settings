@@ -22,11 +22,6 @@
     <string name="colt_stats_title">ColtOS Stats</string>
     <string name="colt_stats_summary">Just counting how many devices we run on</string>
 
-    <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-    <string name="build_date">Build date</string>
-    <string name="colt_version">ColtOS version</string>
-    <string name="about_device_name">Device</string>
-
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Minimum refresh rate</string>
