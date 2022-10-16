@@ -219,7 +219,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 	    if (key.equals("usercard_space")){
                 preference.setLayoutResource(R.layout.usercard_space);
             } else if (key.equals("top_level_network")
-            	|| key.equals("top_level_colt")
+            	|| key.equals("top_level_colt_settings")
             	|| key.equals("top_level_apps")
             	|| key.equals("top_level_accessibility")
             	|| key.equals("top_level_emergency")
