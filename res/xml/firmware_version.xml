@@ -25,37 +25,46 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="colt_logo"
         android:layout="@layout/colt_logo"
+	settings:layout="@layout/arc_card_about"
         android:selectable="false"/>
 
     <!-- Colt version -->
     <Preference
         android:key="colt_version"
+	android:icon="@drawable/ic_android_version"
         android:title="@string/colt_version"
 	android:summary="@string/summary_placeholder"
+	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.ColtVersionPreferenceController"/>
 
     <!-- Build date -->
     <Preference
         android:key="build_date"
+	android:icon="@drawable/ic_android_version"
         android:title="@string/build_date"
         android:summary="@string/build_date_default"
+	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
 
     <!-- ColtOS maintainer -->
     <Preference
         android:key="maintainer"
+	android:icon="@drawable/ic_android_version"
         android:title="@string/maintainer"
         android:summary="@string/summary_placeholder"
+	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.ColtMaintainerPreferenceController"/>
 
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
+	android:icon="@drawable/ic_android_version"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
+	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
@@ -63,7 +72,9 @@
     <!-- Security patch -->
     <Preference
         android:key="security_key"
+	android:icon="@drawable/ic_android_version"
         android:title="@string/security_patch"
+	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
@@ -78,27 +89,30 @@
     <!-- Baseband -->
     <Preference
         android:key="base_band"
+	android:icon="@drawable/ic_android_version"
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
     <!-- Kernel -->
     <Preference
         android:key="kernel_version"
+	android:icon="@drawable/ic_android_version"
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
+	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
     <!-- Build -->
     <Preference
         android:key="os_build_number"
+	android:icon="@drawable/ic_android_version"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
+	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/> -->
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
 
 </PreferenceScreen>
