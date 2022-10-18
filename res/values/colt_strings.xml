@@ -220,4 +220,12 @@
     <string name="face_unlock_method_swipe">When swiping on lock screen</string>
     <string name="skip_biometric_auth_confirmation_title">Skip manual confirmation</string>
 
+    <!-- Black theme -->
+    <string name="custom_theme_title">Use Custom theme</string>
+    <string name="custom_theme_default">Default</string>
+    <string name="custom_theme_black">Black</string>
+    <string name="custom_theme_clear">Clear</string>
+    <string name="custom_theme_vivid">Vivid(Monet)</string>
+    <string name="custom_theme_espresso">Espresso</string>
+    <string name="custom_theme_snowpaintdrop">Paint in the Snow</string>
 </resources>
