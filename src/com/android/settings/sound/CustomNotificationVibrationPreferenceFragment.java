@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 Yet Another AOSP Project
+ * Copyright (C) 2022 Yet Another AOSP Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,6 +17,8 @@ package com.android.settings.sound;
 
 import android.content.Context;
 
+import androidx.annotation.XmlRes;
+
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
@@ -26,11 +28,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Settings for custom ringtone vibration pattern
+ * Settings for custom notification vibration pattern
  */
-public class CustomVibrationPreferenceFragment extends DashboardFragment {
+public class CustomNotificationVibrationPreferenceFragment extends DashboardFragment {
 
-    private static final String TAG = "CustomVibrationPreferenceFragment";
+    private static final String TAG = "CustomNotificationVibrationPreferenceFragment";
+
+    @Override
+    public void addPreferencesFromResource(@XmlRes int preferencesResId) {
+        super.addPreferencesFromResource(preferencesResId);
+        getActivity().setTitle(getContext().getText(
+                R.string.notification_vibration_pattern_title));
+    }
 
     @Override
     public int getMetricsCategory() {
@@ -50,7 +59,7 @@ public class CustomVibrationPreferenceFragment extends DashboardFragment {
     @Override
     protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
-        controllers.add(new CustomVibrationPreferenceController(context));
+        controllers.add(new CustomNotificationVibrationPreferenceController(context));
         return controllers;
     }
 }

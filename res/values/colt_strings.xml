@@ -70,9 +70,6 @@
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader in power menu</string>
 
-    <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
-
     <!-- Radio Info -->
     <string name="radio_info_title">Radio info</string>
 
@@ -337,6 +334,7 @@
 
     <!-- Vibration patterns -->
     <string name="vibration_pattern_title">Ringtone vibration pattern</string>
+    <string name="notification_vibration_pattern_title">Notification vibration pattern</string>
     <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
     <string name="pattern_dzzz_da">dzzz-da</string>
     <string name="pattern_mm_mm_mm">mm-mm-mm</string>
@@ -372,4 +370,7 @@
     <string name="default_notification_torch_summary">Blink the camera flashlight for this notification</string>
     <string name="default_notification_torch_slider1">Times to blink</string>
     <string name="default_notification_torch_slider2">Rate of blink</string>
+
+    <string name="unit_ms">ms</string>
+    <string name="unit_times">Times</string>
 </resources>
