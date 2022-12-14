@@ -62,6 +62,7 @@
         android:icon="@drawable/op_ic_colt"
         android:order="-130"
         android:fragment="com.colt.enigma.ColtEnigma"
+	settings:highlightableMenuKey="@string/menu_key_colt"
         settings:controller="com.android.settings.colt.TopLevelColtEnigmaEntryPreferenceController" />
 
     <com.android.settings.widget.HomepagePreference

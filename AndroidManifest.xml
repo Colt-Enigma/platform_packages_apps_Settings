@@ -4587,6 +4587,8 @@
                   <action android:name="android.intent.action.COLT_ENIGMA" />
                   <category android:name="com.android.settings.DEFAULT" />
             </intent-filter>
+	    <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                       android:value="@string/menu_key_colt"/>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.colt.enigma.ColtEnigma" />
         </activity>
