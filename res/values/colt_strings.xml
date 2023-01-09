@@ -308,4 +308,12 @@
     <string name="pattern_custom">Custom</string>
     <string name="custom_vibration_pattern_title">Custom pattern</string>
     <string name="custom_vibration_pattern_summary">Set a custom vibration pattern</string>
+
+    <!-- Per-channel torch blinking -->
+    <string name="default_notification_torch_title">Blink Torch</string>
+    <string name="default_notification_torch_summary">Blink the camera flashlight for this notification</string>
+    <string name="default_notification_torch_slider1">Times to blink</string>
+    <string name="default_notification_torch_slider2">Rate of blink</string>
 </resources>
+
+
