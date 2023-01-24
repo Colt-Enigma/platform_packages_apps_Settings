@@ -64,8 +64,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
     @VisibleForTesting
     static final String KEY_BATTERY_USAGE = "battery_usage_summary";
 
-    private static final String KEY_BATTERY_TEMP = "battery_temp";
-
     @VisibleForTesting
     static final int BATTERY_INFO_LOADER = 1;
     @VisibleForTesting
@@ -79,8 +77,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
     LayoutPreference mBatteryLayoutPref;
     @VisibleForTesting
     BatteryInfo mBatteryInfo;
-    @VisibleForTesting
-    PowerGaugePreference mBatteryTempPref;
 
     @VisibleForTesting
     BatteryHeaderPreferenceController mBatteryHeaderPreferenceController;
@@ -241,12 +237,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
         }
         // reload BatteryInfo and updateUI
         restartBatteryInfoLoader();
-
-        if (BatteryInfo.batteryTemp != 0f) {
-            mBatteryTempPref.setSummary(BatteryInfo.batteryTemp + " \u2103");
-        } else {
-            mBatteryTempPref.setSummary(getResources().getString(R.string.status_unavailable));
-        }
     }
 
     @VisibleForTesting
@@ -271,7 +261,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
         mBatteryUsagePreference = findPreference(KEY_BATTERY_USAGE);
         mBatteryUsagePreference.setSummary(getString(R.string.advanced_battery_preference_summary));
 
-        mBatteryTempPref = (PowerGaugePreference) findPreference(KEY_BATTERY_TEMP);
         mHelpPreference = findPreference(KEY_BATTERY_ERROR);
         mHelpPreference.setVisible(false);
     }
