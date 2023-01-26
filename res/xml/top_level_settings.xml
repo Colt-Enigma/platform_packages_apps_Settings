@@ -50,10 +50,10 @@
         android:title="@string/colt_settings_dash_title"
         android:summary="@string/colt_settings_summary"
         android:icon="@drawable/op_ic_colt"
-        android:order="-150"
+        android:order="-130"
         android:fragment="com.colt.enigma.ColtEnigma"
         settings:controller="com.android.settings.colt.TopLevelColtEnigmaEntryPreferenceController" />
-        
+
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.DisplaySettings"
         android:icon="@drawable/op_ic_homepage_display_settings"
