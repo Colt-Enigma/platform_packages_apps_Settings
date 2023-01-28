@@ -22,6 +22,7 @@ import static com.android.settingslib.search.SearchIndexable.MOBILE;
 import android.app.ActivityManager;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -66,7 +67,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
 
     private static final String TAG = "TopLevelSettings";
-    private static final String KEY_BASECAMP = "top_level_base_camp";
+    private static final String KEY_COLTOS = "top_level_colt_settings";
     private static final String SAVED_HIGHLIGHT_MIXIN = "highlight_mixin";
     private static final String PREF_KEY_SUPPORT = "top_level_support";
 
@@ -76,6 +77,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     private boolean mScrollNeeded = true;
     private boolean mFirstStarted = true;
     private ActivityEmbeddingController mActivityEmbeddingController;
+    private boolean gAppsExists;
 
     public TopLevelSettings() {
         final Bundle args = new Bundle();
@@ -116,6 +118,8 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+        // Check if Google Apps exist and set the gAppsExists flag accordingly
+        gAppsExists = checkIfGoogleAppsExist(context);
         HighlightableMenu.fromXml(context, getPreferenceScreenResId());
         use(SupportPreferenceController.class).setActivity(getActivity());
         updateLabSummary();
@@ -220,6 +224,18 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         return taskInfo.numActivities == 1;
     }
 
+    private boolean checkIfGoogleAppsExist(Context context) {
+        // Perform the necessary check to determine if Google Apps exist
+        // For example, you might use PackageManager to check for the existence of a Google app package
+        PackageManager packageManager = context.getPackageManager();
+        try {
+            packageManager.getPackageInfo("com.google.android.gsf", 0);
+            return true; // Google Apps exist
+        } catch (PackageManager.NameNotFoundException e) {
+            return false; // Google Apps do not exist
+        }
+    }
+
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -238,6 +254,40 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                 icon.setTint(tintColor);
             }
         });
+        onSetPrefCard();
+    }
+
+    private void onSetPrefCard() {
+        final PreferenceScreen screen = getPreferenceScreen();
+        final int count = screen.getPreferenceCount();
+        for (int i = 0; i < count; i++) {
+            final Preference preference = screen.getPreference(i);
+
+            String key = preference.getKey();
+            if (key.equals("top_level_network")
+            	|| key.equals("top_level_colt_settings")
+            	|| key.equals("top_level_apps")
+            	|| key.equals("top_level_accessibility")
+            	|| key.equals("top_level_emergency")
+                || key.equals("top_level_system")){
+                preference.setLayoutResource(R.layout.everestos_dashboard_preference_top);
+            } else if (key.equals("top_level_battery")
+            	|| key.equals("top_level_display")
+            	|| key.equals("top_level_security")
+            	|| key.equals("top_level_privacy")
+            	|| key.equals("top_level_safety_center")
+            	|| key.equals("top_level_storage")
+            	|| key.equals("top_level_wellbeing")
+            	|| key.equals("top_level_notifications")){
+                preference.setLayoutResource(R.layout.everestos_dashboard_preference_middle);
+            } else if ("top_level_google".equals(key)){
+                preference.setLayoutResource(R.layout.everestos_dashboard_preference_bottom);
+            } else if (key.equals("top_level_accounts") && gAppsExists){
+                preference.setLayoutResource(R.layout.everestos_dashboard_preference_middle);
+            } else {
+                preference.setLayoutResource(R.layout.everestos_dashboard_preference_bottom);
+            }
+       }
     }
 
     @Override
@@ -399,13 +449,13 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     }
 
     private void updateLabSummary() {
-        Preference basecamp = findPreference(KEY_BASECAMP);
-        if (basecamp != null) {
+        Preference coltos = findPreference(KEY_COLTOS);
+        if (coltos != null) {
             String[] summaries = getContext().getResources().getStringArray(
-                    R.array.basecamp_summaries);
+                    R.array.coltenigma_summaries);
             Random rnd = new Random();
             int summNO = rnd.nextInt(summaries.length);
-            basecamp.setSummary(summaries[summNO]);
+            coltos.setSummary(summaries[summNO]);
         }
     }
 
