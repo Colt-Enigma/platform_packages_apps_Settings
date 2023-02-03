@@ -92,6 +92,7 @@
 	android:icon="@drawable/ic_android_version"
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
+	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
