@@ -14,7 +14,7 @@ import com.xtended.settings.theme.ColorPickerPreference
 
 abstract class XDashboardFragment : DashboardFragment() {
 
-    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.XTENSIONS
+    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.COLT
 
     override fun onDisplayPreferenceDialog(preference: Preference) {
         if (preference is ColorPickerPreference) {

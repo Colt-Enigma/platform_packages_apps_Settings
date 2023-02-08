@@ -12,7 +12,7 @@ import android.provider.Settings
 import androidx.preference.Preference
 
 import com.android.settings.core.BasePreferenceController
-import com.xtended.support.preferences.CustomSeekBarPreference
+import com.colt.enigma.preference.CustomSeekBarPreference
 
 class MonetChromaFactorPreferenceController(
     context: Context,
