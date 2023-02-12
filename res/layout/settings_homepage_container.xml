@@ -36,32 +36,30 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/appbar"
-            app:elevation="0dp"
+	<com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:touchscreenBlocksFocus="false"
+        android:keyboardNavigationCluster="false">
+        <LinearLayout
+            android:id="@+id/app_bar_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/colorPrimary"
-            android:fitsSystemWindows="true">
+            android:orientation="vertical"
+            android:gravity="bottom"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-        <LinearLayout
-                android:id="@+id/common_con"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-    	        android:layout_marginBottom="10dp"
-    	        android:padding="4dp"
-        	android:gravity="center"
-                android:layout_marginEnd="16dp"
-                android:orientation="horizontal">
-            <Toolbar
-                    android:id="@+id/search_action_bar"
-                    android:layout_width="54dp"
-                    android:navigationIcon="@drawable/ic_homepage_search"
-                    android:layout_height="34dp"
-                    android:background="@android:color/transparent"/>
+            <include
+                android:id="@+id/homepage_app_bar_regular_phone_view"
+                layout="@layout/settings_homepage_app_bar_regular_phone_layout"/>
+
+            <include
+                android:id="@+id/homepage_app_bar_two_pane_view"
+                layout="@layout/settings_homepage_app_bar_two_pane_layout"
+                android:visibility="gone"/>
         </LinearLayout>
-</com.google.android.material.appbar.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
             <include
                 android:id="@+id/suggestion_container_two_pane"
@@ -83,30 +81,6 @@
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:touchscreenBlocksFocus="false"
-        android:keyboardNavigationCluster="false">
-        <LinearLayout
-            android:id="@+id/app_bar_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
-
-            <include
-                android:id="@+id/homepage_app_bar_regular_phone_view"
-                layout="@layout/settings_homepage_app_bar_regular_phone_layout"/>
-
-            <include
-                android:id="@+id/homepage_app_bar_two_pane_view"
-                layout="@layout/settings_homepage_app_bar_two_pane_layout"
-                android:visibility="gone"/>
-        </LinearLayout>
-    </com.google.android.material.appbar.AppBarLayout>
 </com.android.settings.edgeeffect.SpringNestScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
