@@ -23,4 +23,6 @@
     <dimen name="rdnt_card_radius">22dp</dimen>
     
     <dimen name="stroke_widthAboutUI">1dp</dimen>
+    
+    <dimen name="rounded_corner_theme_overlay_radius">24dp</dimen>
 </resources>
