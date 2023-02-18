@@ -50,8 +50,8 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
-import com.arrow.support.preferences.SystemSettingSwitchPreference;
-import com.arrow.support.preferences.SystemSettingMainSwitchPreference;
+import com.colt.enigma.preference.SystemSettingSwitchPreference;
+import com.colt.enigma.preference.SystemSettingMainSwitchPreference;
 
 public class NetworkTrafficSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -102,6 +102,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment implement
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ARROW;
+        return MetricsProto.MetricsEvent.COLT;
     }
 }
