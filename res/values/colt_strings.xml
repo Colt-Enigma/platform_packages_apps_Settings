@@ -314,6 +314,9 @@
     <string name="default_notification_torch_summary">Blink the camera flashlight for this notification</string>
     <string name="default_notification_torch_slider1">Times to blink</string>
     <string name="default_notification_torch_slider2">Rate of blink</string>
+
+    <string name="unit_ms">ms</string>
+    <string name="unit_times">Times</string>
 </resources>
 
 
