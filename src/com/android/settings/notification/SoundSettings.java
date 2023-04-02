@@ -49,7 +49,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.UpdatableListPreferenceDialogFragment;
 
-import com.arrow.support.preferences.SecureSettingSwitchPreference;
+import com.colt.enigma.preference.SecureSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
