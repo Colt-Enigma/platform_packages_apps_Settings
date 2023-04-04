@@ -18,5 +18,3 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="communal_preference_screen"
     android:title="@string/communal_settings_title" />
-
-</resources>
