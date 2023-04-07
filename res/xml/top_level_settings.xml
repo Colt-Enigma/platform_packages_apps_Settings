@@ -21,7 +21,7 @@
         android:key="top_level_colt_settings"
 	android:title="@string/colt_settings_dash_title"
         android:icon="@drawable/ic_settings_colt"
-        android:order="-150"
+        android:order="-170"
         android:fragment="com.colt.enigma.ColtEnigma"
 	settings:controller="com.android.settings.colt.TopLevelColtEnigmaEntryPreferenceController" />
 
