@@ -77,10 +77,12 @@
 
     <!-- Device deep sleep time -->
         <Preference
+	    android:icon="@drawable/ic_uptime"
             android:key="sleep_time"
             android:order="49"
             android:title="@string/status_sleep_time"
             android:summary="@string/summary_placeholder"
+	    settings:layout="@layout/abt_card_preference_middle"
             android:selectable="false"/>
 
     <!-- Legal information -->
@@ -97,6 +99,8 @@
     <!-- Regulatory labels -->
     <Preference
         android:key="regulatory_info"
+	android:icon="@drawable/ic_doc"
+	settings:layout="@layout/abt_card_preference_middle"
         settings:layout="@layout/abt_card_preference_top"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
@@ -105,6 +109,7 @@
     <!-- Safety & regulatory manual -->
     <Preference
         android:key="safety_info"
+	android:icon="@drawable/ic_android_acc"
         settings:layout="@layout/abt_card_preference_middle"
         android:title="@string/safety_and_regulatory_info">
         <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO" />
