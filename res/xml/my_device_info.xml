@@ -82,7 +82,7 @@
             android:order="49"
             android:title="@string/status_sleep_time"
             android:summary="@string/summary_placeholder"
-	    settings:layout="@layout/abt_card_preference_middle"
+	    settings:layout="@layout/abt_card_preference_bottom"
             android:selectable="false"/>
 
     <!-- Legal information -->
@@ -100,8 +100,7 @@
     <Preference
         android:key="regulatory_info"
 	android:icon="@drawable/ic_doc"
-	settings:layout="@layout/abt_card_preference_middle"
-        settings:layout="@layout/abt_card_preference_top"
+	settings:layout="@layout/abt_card_preference_top"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
     </Preference>
