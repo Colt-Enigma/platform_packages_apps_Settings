@@ -35,10 +35,6 @@
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Tap to show info</string>
 
-    <!-- ColtOS Installation Stats -->
-    <string name="colt_stats_title">ColtOS Stats</string>
-    <string name="colt_stats_summary">Just counting how many devices we run on</string>
-
     <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
     <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
     <string name="fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
