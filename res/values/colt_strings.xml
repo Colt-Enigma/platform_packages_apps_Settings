@@ -432,6 +432,4 @@
     <string name="face_unlock_method_swipe">When swiping on lock screen</string>
     <string name="skip_biometric_auth_confirmation_title">Skip manually confirmation</string>
 
-=======
->>>>>>> parent of fdc7090ce7 ([SQUASH]: Settings Homepage Redesign)
 </resources>
