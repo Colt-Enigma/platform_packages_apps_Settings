@@ -524,4 +524,8 @@
     <dimen name="dashboard_tile_image_size">@dimen/op_control_avatar_size3</dimen>
     <dimen name="dashboard_tile_foreground_image_size">@dimen/op_control_icon_size_indicator</dimen>
     <dimen name="op_control_icon_size_indicator">16.0dip</dimen>
+
+    <dimen name="bliss_preference_category_padding_top">0.0dip</dimen>
+    <dimen name="bliss_preference_category_line_margin_start">10.0dip</dimen>
+    <dimen name="bliss_preference_category_height">40.0dip</dimen>
 </resources>

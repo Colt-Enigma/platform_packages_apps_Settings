@@ -24,8 +24,7 @@
     <!-- Colt logo -->
     <com.android.settingslib.widget.LayoutPreference
         android:key="colt_logo"
-        android:layout="@layout/colt_logo"
-	settings:layout="@layout/arc_card_about"
+        android:layout="@layout/colt_logo"	
         android:clickable="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.ColtOSLogoPreferenceController"/>
 
@@ -35,7 +34,6 @@
 	android:icon="@drawable/ic_android_version"
         android:title="@string/colt_version"
 	android:summary="@string/summary_placeholder"
-	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.ColtVersionPreferenceController"/>
 
@@ -45,7 +43,6 @@
 	android:icon="@drawable/ic_android_version"
         android:title="@string/build_date"
         android:summary="@string/build_date_default"
-	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
 
@@ -55,7 +52,6 @@
 	android:icon="@drawable/ic_android_version"
         android:title="@string/maintainer"
         android:summary="@string/summary_placeholder"
-	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.ColtMaintainerPreferenceController"/>
 
@@ -65,7 +61,6 @@
 	android:icon="@drawable/ic_android_version"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
-	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
@@ -76,7 +71,6 @@
         android:key="security_key"
 	android:icon="@drawable/ic_android_version"
         android:title="@string/security_patch"
-	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
@@ -94,7 +88,6 @@
 	android:icon="@drawable/ic_android_version"
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
-	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
@@ -104,7 +97,6 @@
 	android:icon="@drawable/ic_android_version"
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
-	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
@@ -114,7 +106,6 @@
 	android:icon="@drawable/ic_android_version"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
-	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
 
@@ -123,7 +114,6 @@
         android:key="selinux_status"
         android:title="@string/selinux_status"
         android:summary="@string/summary_placeholder"
-	settings:layout="@layout/arc_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SelinuxStatusPreferenceController"/>
 
