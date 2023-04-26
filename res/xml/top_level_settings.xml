@@ -17,13 +17,22 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings"
     android:title="Settings">
-        
+
     <com.android.settings.widget.HomepagePreference
-        android:title="test"
-        android:icon="@drawable/ic_network"
-        android:key="usercard_space"
-        android:selectable="false"
-        android:order="-165"/>
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:icon="@drawable/op_ic_homepage_about_settings"
+        android:key="top_level_about_device"
+        android:order="20"
+        android:title="@string/about_settings"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_about_device"
+        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:layout="@layout/usercard"
+        android:fragment="com.android.settings.users.UserSettings"
+        android:key="top_level_usercard"
+        android:order="-170" />
         
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
@@ -151,6 +160,15 @@
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.system.SystemDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_system_dashboard_settings"
+        android:key="top_level_system"
+        android:order="10"
+        android:title="@string/header_category_system"
+        android:summary="@string/system_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_system"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
         android:icon="@drawable/op_ic_homepage_privacy_settings"
         android:key="top_level_privacy"
@@ -187,25 +205,6 @@
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_accounts"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
-
-    <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.system.SystemDashboardFragment"
-        android:icon="@drawable/op_ic_homepage_system_dashboard_settings"
-        android:key="top_level_system"
-        android:order="10"
-        android:title="@string/header_category_system"
-        android:summary="@string/system_dashboard_summary"
-        settings:highlightableMenuKey="@string/menu_key_system"/>
-
-    <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
-        android:icon="@drawable/op_ic_homepage_about_settings"
-        android:key="top_level_about_device"
-        android:order="20"
-        android:title="@string/about_settings"
-        android:summary="@string/summary_placeholder"
-        settings:highlightableMenuKey="@string/menu_key_about_device"
-        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/op_ic_homepage_support_settings"
