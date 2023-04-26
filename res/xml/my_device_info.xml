@@ -21,7 +21,6 @@
     android:layout="@layout/about_phone_info"
     android:selectable="false" />
 
-
     <!-- Top category -->
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
@@ -54,7 +53,7 @@
         settings:enableCopying="true"
         settings:keywords="@string/keywords_model_and_hardware"
         settings:layout="@layout/abt_card_preference_middle" />
-
+        
     <!-- Android version -->
     <Preference
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"

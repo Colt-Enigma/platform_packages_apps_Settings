@@ -52,7 +52,7 @@
             android:text="@string/wellbeing_title"
             android:singleLine="true"
             style="@style/op_control_text_style_h6"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
             
         <TextView
             android:id="@android:id/summary"
