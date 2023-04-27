@@ -4609,8 +4609,12 @@
 	    android:icon="@drawable/ic_homepage_colt"
 	    android:exported="true">
 	<intent-filter android:priority="1">
+		<action android:name="com.android.settings.COLT_SETTINGS" />
+                  <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
                   <action android:name="android.intent.action.COLT_ENIGMA" />
-                  <category android:name="com.android.settings.DEFAULT" />
+                  <category android:name="com.android.settings.SHORTCUT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.colt.enigma.ColtEnigma" />
