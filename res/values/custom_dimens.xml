@@ -27,7 +27,7 @@
     <dimen name="rounded_corner_theme_overlay_radius">24dp</dimen>
     
      <!-- xd. Toolbar -->
-     <dimen name="xd_toolbar_height">179dp</dimen>
+     <dimen name="xd_toolbar_height">90dp</dimen>
      <dimen name="xd_toolbar_expanded_title_margin_start">24dp</dimen>
      <dimen name="xd_toolbar_expanded_title_margin_end">24dp</dimen>
 
