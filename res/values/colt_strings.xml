@@ -249,7 +249,7 @@
     <!-- Charging vibration -->
     <string name="charging_sounds_custom_title">Charging sound</string>
     <string name="charging_vibro_title">Charging vibration</string>
-
+    
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Minimum refresh rate</string>
