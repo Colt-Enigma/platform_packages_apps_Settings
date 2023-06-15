@@ -126,6 +126,14 @@
             settings:keywords="@string/keywords_enhance_4g_lte"
             settings:controller="com.android.settings.network.telephony.Enhanced4gAdvancedCallingPreferenceController"/>
 
+	 <SwitchPreference
+            android:key="nr_advanced_calling"
+            android:title="@string/nr_advanced_calling_title"
+            android:persistent="false"
+            android:summary="@string/nr_advanced_calling_summary"
+            settings:keywords="@string/keywords_nr_advanced_calling"
+            settings:controller="com.android.settings.network.telephony.NrAdvancedCallingPreferenceController"/>
+
         <SwitchPreference
             android:key="smart_5g"
             android:title="@string/smart_5g_title"
@@ -254,14 +262,6 @@
             android:title="@string/enable_2g_title"
             android:summary="@string/enable_2g_summary"
             settings:controller="com.android.settings.network.telephony.Enable2gPreferenceController" />
-
-        <SwitchPreference
-            android:key="nr_advanced_calling"
-            android:title="@string/nr_advanced_calling_title"
-            android:persistent="false"
-            android:summary="@string/nr_advanced_calling_summary"
-            settings:keywords="@string/keywords_nr_advanced_calling"
-            settings:controller="com.android.settings.network.telephony.NrAdvancedCallingPreferenceController"/>
     </PreferenceCategory>
 
     <Preference
