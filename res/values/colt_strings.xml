@@ -95,4 +95,8 @@
      <string name="color_mode_balance_blue">Blue strength</string>
      <string name="keywords_color_balance">color, color balance, color correction, red, green, blue,
           LiveDisplay</string>
+
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tap to show info</string>
+
 </resources>
