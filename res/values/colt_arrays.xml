@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Random summary -->
-    <string-array name="basecamp_summaries">
+    <string-array name="coltenigma_summaries">
         <item>Warning: Insanely cool stuff ahead!</item>
         <item>Some interesting tagline. Blah blah blah...</item>
         <item>Get ready to be blown to the world of imagination</item>
