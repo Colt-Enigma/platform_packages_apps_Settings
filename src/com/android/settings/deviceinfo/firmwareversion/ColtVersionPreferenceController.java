@@ -45,7 +45,7 @@ public class ColtVersionPreferenceController extends BasePreferenceController {
 
     @Override
     public CharSequence getSummary() {
-        String COLTVersion = SystemProperties.get(COLT_VERSION_PROPERTY);
+        String coltVersion = SystemProperties.get(COLT_VERSION_PROPERTY);
         String coltReleaseType = SystemProperties.get(COLT_RELEASETYPE_PROPERTY);
         String coltZipType = SystemProperties.get(COLT_ZIPTYPE_PROPERTY);
         if (!coltVersion.isEmpty() && !coltReleaseType.isEmpty() && !coltZipType.isEmpty()) {
