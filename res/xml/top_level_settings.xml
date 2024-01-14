@@ -18,18 +18,10 @@
     android:key="top_level_settings">
 
     <com.android.settings.widget.HomepagePreference
-        android:key="top_level_colt_settings"
-	android:title="@string/colt_settings_dash_title"
-        android:icon="@drawable/ic_settings_colt"
-        android:order="-170"
-        android:fragment="com.colt.enigma.ColtEnigma"
-	settings:controller="com.android.settings.colt.TopLevelColtEnigmaEntryPreferenceController" />
-
-    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
         android:key="top_level_network"
-        android:order="-140"
+        android:order="-160"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_network"
@@ -49,11 +41,12 @@
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
         android:icon="@drawable/ic_devices_other"
         android:key="top_level_connected_devices"
-        android:order="-130"
+        android:order="-150"
         android:title="@string/connected_devices_dashboard_title"
         android:summary="@string/connected_devices_dashboard_default_summary"
         settings:highlightableMenuKey="@string/menu_key_connected_devices"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
+
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
         android:key="top_level_about_device"
@@ -62,6 +55,14 @@
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_about_device"
         settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+        android:key="top_level_colt_settings"
+        android:title="@string/colt_settings_dash_title"
+        android:icon="@drawable/ic_settings_colt"
+        android:order="-170"
+        android:fragment="com.colt.enigma.ColtEnigma"
+        settings:controller="com.android.settings.colt.TopLevelColtEnigmaEntryPreferenceController" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.DisplaySettings"
@@ -133,7 +134,7 @@
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         android:icon="@drawable/ic_settings_accessibility"
         android:key="top_level_accessibility"
-        android:order="-50"
+        android:order="-60"
         android:title="@string/accessibility_settings"
         android:summary="@string/accessibility_settings_summary"
         settings:highlightableMenuKey="@string/menu_key_accessibility"
@@ -152,7 +153,7 @@
         android:fragment="com.android.settings.security.SecuritySettings"
         android:icon="@drawable/ic_settings_security_white"
         android:key="top_level_security"
-        android:order="-40"
+        android:order="-50"
         android:title="@string/security_settings_title"
         android:summary="@string/security_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_security"
@@ -162,7 +163,7 @@
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
         android:icon="@drawable/ic_settings_privacy"
         android:key="top_level_privacy"
-        android:order="-30"
+        android:order="-40"
         android:title="@string/privacy_dashboard_title"
         android:summary="@string/privacy_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_privacy"
@@ -172,7 +173,7 @@
         android:fragment="com.android.settings.location.LocationSettings"
         android:icon="@drawable/ic_settings_location"
         android:key="top_level_location"
-        android:order="-20"
+        android:order="-30"
         android:title="@string/location_settings_title"
         android:summary="@string/location_settings_loading_app_permission_stats"
         settings:highlightableMenuKey="@string/menu_key_location"
@@ -183,7 +184,7 @@
         android:title="@string/emergency_settings_preference_title"
         android:summary="@string/emergency_dashboard_summary"
         android:icon="@drawable/ic_settings_emergency"
-        android:order="-10"
+        android:order="-20"
         android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"
         settings:isPreferenceVisible="@bool/config_show_emergency_settings"
         settings:highlightableMenuKey="@string/menu_key_emergency"/>
@@ -192,7 +193,7 @@
         android:fragment="com.android.settings.accounts.AccountDashboardFragment"
         android:icon="@drawable/ic_settings_accounts"
         android:key="top_level_accounts"
-        android:order="9"
+        android:order="-10"
         android:title="@string/account_dashboard_title"
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_accounts"
